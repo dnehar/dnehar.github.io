@@ -17,20 +17,23 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
 
-  - {file: "DNB.pdf", title: CV, icon: home}
-  - {file: "README.md" , title: Projects}
+  
   - {file: "index.html", title: About me}
+  - {file: "README.md" , title: Projects}
+  - {file: "DNB_12232021.pdf", title: CV, icon: home}
 
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:nehar.djamel@gmail.com"}
   - {title: Github, icon: github, url: "http://dnehar.github.io"}
   - {title: Twitter, icon: twitter, url: "https://twitter.com/djamel_nehar"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  #- {title: Subscribe, icon: rss, url: "/feed.xml"}
+
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
 #  isso_domain: ""         # see https://posativ.org/isso/
+
 
 plugins:
  - jekyll-feed
