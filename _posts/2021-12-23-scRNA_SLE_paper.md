@@ -23,3 +23,6 @@ similar subpopulations in patients with the highest disease activity. This study
 the SLE transcriptional signatures and the disease heterogeneity towards precision medicine applications. 
 
 [link] (https://doi.org/10.1038/s41590-020-0743-0)
+
+## Context 
+In an effort towards understanding the SLE heterogeneity, we used single-cell RNA-seq to profile ~276,000 PBMCs from 33 children with SLE with different degrees of disease activity (DA) and 11 matched controls. We demonstrated that the interferon-stimulated genes signature derived from a small number of transcriptionally defined subpopulations within major cell types including monocytes, CD4+ and CD8+ T cells, naturel killer cells, conventional and plasmacytoid dendritic cells, B cells and especially plasma cells. Expansion of unique subpopulations enriched in ISGs and/or in monogenic Lupus-associated genes classified patients with the highest DA. In addition, the profiling of ~82,000 single PBMCs from an independent adult SLE patients confirmed the expansion of similar subpopulations in patients with the highest DA. This study provided a framework for resolving the origin of the SLE transcriptional signature and point towards specific cell subpopulations as potential therapeutic targets.![image](https://user-images.githubusercontent.com/22060632/147284126-1ea4fcad-753d-4790-a167-cda9c3dbbdb0.png)
