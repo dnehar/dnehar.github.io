@@ -19,7 +19,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 
   
   - {file: "index.html", title: About me, file: "about_me.md"}
-  - {file: "README.md" , title: Projects}
+  - {file: "project.md" , title: Projects}
   - {file: "MyCV.md", title: My CV} #, icon: home
 
 
