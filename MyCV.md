@@ -18,8 +18,8 @@
 
 
 ## MENTORING EXPERIENCE
-        1. Isabelle chen, intern, Northwestern University. October 2018 - present
-        2. Rushil Yerrabelli, intern, Conard High School, West Hartford, CT. Sept 2019 - present
+        1. Isabelle chen, intern, Northwestern University. October 2018 - October 2021
+        2. Rushil Yerrabelli, intern, Conard High School, West Hartford, CT. Sept 2019 - October 2021
         3. Summit Singhaviranon, MD-Ph.D rotation, UConn health, Sept 2020 - Dec 2020
         4. Omar Mustapha Omar, MD-Ph.D summer intern, UConn health, Jun 2018 - Aug 2019
         5. Dong JinHong, MD-Ph.D rotation, UConn health, Jun 2018 - Aug 2019
