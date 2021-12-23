@@ -46,7 +46,14 @@
         6. “Transcriptomics reveal an early immunological storm induced by tumor cells”, colloque Cancer- Vaccination. Nantes, France. 2014
         7. “Using systems immunology to the study of tumor microenvironment”, French Society of Immunology, Paris, France. 2014
 
+## POSTERS (in chronological order)
 
+        1. “A single cell approach to map cellular subsets involved in SLE heterogeneity”, FOCIS meeting, Boston, MA, USA. June 2019
+        2. “Different cell types contribute to unique components of the interferon signature in SLE PBMCs”, FOCIS meeting, San Francisco, CA, USA. June 2018
+        3. “All leukocytes contribute to unique components of the SLE blood signature”, 27th Annual Short Course on Experimental Models of Human Cancer, Bar Harbor, 
+        ME, USA. August 2018.
+        4. “Transcriptomics reveal an early immunological storm induced by tumor cells”, French Society of Immunology, Paris, France. 2015
+        5. “Using systems immunology to the study of tumor microenvironment”, French Society of Immunology, Paris, France. 2014
 
 
 
