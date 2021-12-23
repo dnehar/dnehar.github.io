@@ -25,11 +25,11 @@ of non-proliferative senescent-like CD27−CD28−CD8+ T cells to acquire a broa
 
 ## Data avalability 
 
-https://ega-archive.org/studies/EGAS00001004255 \n
-accession number EGAS00001004255
+  https://ega-archive.org/studies/EGAS00001004255
+  accession number EGAS00001004255
 
 ## Scripts 
-https://github.com/dnehar/Temra-IL7R-Senescence
+  https://github.com/dnehar/Temra-IL7R-Senescence
 
 ## Immune response during aging
 
