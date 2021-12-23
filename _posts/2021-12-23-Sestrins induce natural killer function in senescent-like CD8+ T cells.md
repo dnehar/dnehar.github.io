@@ -8,7 +8,7 @@ categories:
 ---
 
 ## 
-Pereira, De Maeyer, Covre, Nehar-Belaid (Co-first authors) et al. Nature Immunology. PMID: 32231301
+Pereira, De Maeyer, Covre, Nehar-Belaid (co-first authors) et al. Nature Immunology. PMID: 32231301
 
 ## Abstract 
 Aging is associated with remodeling of the immune system to enable the maintenance of life-long immunity. In the CD8+ T cell
@@ -21,3 +21,8 @@ DAP12 and restored TCR signaling in senescent-like CD27−CD28−CD8+ T cells. T
 of non-proliferative senescent-like CD27−CD28−CD8+ T cells to acquire a broad-spectrum, innate-like killing activity. 
 
 [link] (https://doi.org/10.1038/s41590-020-0643-3)
+
+## Immune response during aging
+
+To better understand the mechanisms underlying the accumulation of the highly differentiated CD8+ T cells (known as Temras) during aging, we collaborated with Dr. Arne Akbar (University College London, London, England). I used scRNA-seq to analyze the transcriptomic profiles of purified CD8+ T cells from older adults. I confirmed the observations made by our collaborators using murine models, revealing that senescent CD8+ T cells can develop NK cell-like features over time, a process that was regulated by the stress-sensing proteins called sestrins.
+
