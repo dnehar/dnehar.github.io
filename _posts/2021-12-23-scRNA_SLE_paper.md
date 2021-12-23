@@ -26,15 +26,15 @@ the SLE transcriptional signatures and the disease heterogeneity towards precisi
 
 ## Data avaibility 
 
-### Raw counts: 
+#### 1- Raw counts (publicly available): 
 GEO link:
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE135779
 
-### fastq files: 
+#### 2- fastq files (to be requested on dbGAP): 
 dbGAP link: 
 https://www.ncbi.nlm.nih.gov/projects/gapprev/gap/cgi-bin/study.cgi?study_id=phs002048.v2.p1
 
-## Scripts avaibility 
+## Scripts availability 
 https://github.com/dnehar/SingleCells_SLE_paper
 
 ## Context 
