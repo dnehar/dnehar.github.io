@@ -7,11 +7,7 @@ categories:
   - website
 ---
 
-
-## 
 Pereira, De Maeyer, Covre, Nehar-Belaid (Co-first authors) et al. Nature Immunology. PMID: 32231301
-
-
 
 ## Abstract 
 Aging is associated with remodeling of the immune system to enable the maintenance of life-long immunity. In the CD8+ T cell
