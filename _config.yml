@@ -1,6 +1,6 @@
 title: "Djamel Nehar-Belaid"
 author: "Djamel Nehar-Belaid"
-description: "DNB's page, style=\"color: #f45;\">&lt;3</b>"
+description: "DNB's page"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -22,6 +22,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:nehar.djamel@gmail.com"}
   - {title: Github, icon: github, url: "http://dnehar.github.io"}
+  - {title: Twitter, icon: twitter, url: "https://twitter.com/djamel_nehar"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
