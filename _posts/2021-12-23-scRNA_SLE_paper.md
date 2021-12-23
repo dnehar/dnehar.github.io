@@ -24,6 +24,16 @@ the SLE transcriptional signatures and the disease heterogeneity towards precisi
 
 [link] (https://doi.org/10.1038/s41590-020-0743-0)
 
+## Data avaibility 
+
+### Raw counts: 
+GEO link:
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE135779
+
+### fastq files: 
+dbGAP link: 
+https://www.ncbi.nlm.nih.gov/projects/gapprev/gap/cgi-bin/study.cgi?study_id=phs002048.v2.p1
+
 ![ExperimetalDesign](https://user-images.githubusercontent.com/22060632/147284489-52add15a-3997-4690-89e6-bc0c148c36cb.png)
 
 ## Context 
