@@ -10,7 +10,7 @@ categories:
 
 ## 
 Pereira, De Maeyer, Covre, Nehar-Belaid (Co-first authors) et al. Nature Immunology. PMID: 32231301
-[link] (https://doi.org/10.1038/s41590-020-0643-3)
+
 
 
 ## Abstract 
@@ -22,3 +22,5 @@ against cells that expressed NKG2D ligands. Immunoprecipitation and imaging cyto
 DAP12 complex was associated with sestrin 2. The genetic inhibition of sestrin 2 resulted in decreased expression of NKG2D and
 DAP12 and restored TCR signaling in senescent-like CD27−CD28−CD8+ T cells. Therefore, during aging, sestrins induce the reprogramming
 of non-proliferative senescent-like CD27−CD28−CD8+ T cells to acquire a broad-spectrum, innate-like killing activity. 
+
+[link] (https://doi.org/10.1038/s41590-020-0643-3)
