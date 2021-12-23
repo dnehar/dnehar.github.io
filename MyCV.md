@@ -11,9 +11,9 @@
 
 ## RESEARCH EXPERIENCE
 
-09/2020 - present Associate Research Scientist. The Jackson Laboratory for Genomic Medicine, CT, USA. Mentor: Pr. Jacques Banchereau
-09/2016 - 09/2020 Postdoctoral Associate. The Jackson Laboratory for Genomic Medicine, CT, USA. Mentor: Pr. Jacques Banchereau
-10/2015 - 09/2016 Postdoctoral Fellow. French national center for scientific research (CNRS), Paris, France. Mentor: Pr. David Klatzmann
+        09/2020 - present: Associate Research Scientist. The Jackson Laboratory for Genomic Medicine, CT, USA. Mentor: Pr. Jacques Banchereau
+        09/2016 - 09/2020: Postdoctoral Associate. The Jackson Laboratory for Genomic Medicine, CT, USA. Mentor: Pr. Jacques Banchereau
+        10/2015 - 09/2016: Postdoctoral Fellow. French national center for scientific research (CNRS), Paris, France. Mentor: Pr. David Klatzmann
 
 ## HONORS AND DISTINCTIONS
 ## TEACHING EXPERIENCE
