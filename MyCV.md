@@ -26,4 +26,31 @@
         3. Summit Singhaviranon, MD-Ph.D rotation, UConn health, Sept 2020 - Dec 2020
         4. Omar Mustapha Omar, MD-Ph.D summer intern, UConn health, Jun 2018 - Aug 2019
         5. Dong JinHong, MD-Ph.D rotation, UConn health, Jun 2018 - Aug 2019
-        6. James Seuch, Summer Student Program, The Jackson laboratory, summer 2018
+        6. James Seuch, Summer Student Program, The Jackson laboratory, summer 2010
+        
+## ORAL PRESENTATIONS (in chronological order)
+
+### 1- Invited seminars
+        1. "2nd Meeting on Stochasticity and Control in Adaptive Immune Repertoires", Paris. France. October 2018
+        2. “Graphical visualization methods of microarray data”, university of Patras, Greece, Spring 2015
+
+### 2- Formal seminars
+        1. “Human immune system heterogeneity across the lifespan at the single cell resolution”, FOCIS meeting. Oct. 2020. Selected abstract oral presentation in 
+        thematic session & FOCIS Research Award 2020
+        2. “Single immune cells from newborns to grandparents”, Systems Immunology in Aging and Complex Diseases. Sept. 2020. Selected from Attendee Abstract.
+        3. “Different cell types contribute to unique components of the interferon signature in SLE PBMCs”, FOCIS meeting, Boston, MA, USA. June 2019. Selected 
+        abstract oral presentation in thematic session.
+        4. “Signature discovery: a bridge between tumoral and materno-foetal tolerances”, Workshops: Translational Data Analysis, Hospital Pitié-Salpêtrière Paris, 
+        France. 2016
+        5. “Tregs orchestrate similar immune evasion of fetuses and tumors”, European Congress of Reproductive Immunology, Oxford, UK. 2015
+        6. “Transcriptomics reveal an early immunological storm induced by tumor cells”, colloque Cancer- Vaccination. Nantes, France. 2014
+        7. “Using systems immunology to the study of tumor microenvironment”, French Society of Immunology, Paris, France. 2014
+
+
+
+
+
+
+
+
+
