@@ -34,7 +34,16 @@ https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE135779
 dbGAP link: 
 https://www.ncbi.nlm.nih.gov/projects/gapprev/gap/cgi-bin/study.cgi?study_id=phs002048.v2.p1
 
-![ExperimetalDesign](https://user-images.githubusercontent.com/22060632/147284489-52add15a-3997-4690-89e6-bc0c148c36cb.png)
+## Scripts avaibility 
+https://github.com/dnehar/SingleCells_SLE_paper
 
 ## Context 
 In an effort towards understanding the SLE heterogeneity, we used single-cell RNA-seq to profile ~276,000 PBMCs from 33 children with SLE with different degrees of disease activity (DA) and 11 matched controls. We demonstrated that the interferon-stimulated genes signature derived from a small number of transcriptionally defined subpopulations within major cell types including monocytes, CD4+ and CD8+ T cells, naturel killer cells, conventional and plasmacytoid dendritic cells, B cells and especially plasma cells. Expansion of unique subpopulations enriched in ISGs and/or in monogenic Lupus-associated genes classified patients with the highest DA. In addition, the profiling of ~82,000 single PBMCs from an independent adult SLE patients confirmed the expansion of similar subpopulations in patients with the highest DA. This study provided a framework for resolving the origin of the SLE transcriptional signature and point towards specific cell subpopulations as potential therapeutic targets.
+
+
+## Design of childhood-adult cohort (caSLE)
+
+![ExperimetalDesign](https://user-images.githubusercontent.com/22060632/147284489-52add15a-3997-4690-89e6-bc0c148c36cb.png)
+
+
+
