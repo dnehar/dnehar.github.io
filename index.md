@@ -7,6 +7,6 @@ I am a Reseach Scientist at The Jackon laboratory for Genomic Medecine. Farmingt
 
 My ongoing research within the Verhaak lab focuses on analyzing the tumor microenvironment in gliomas using single cell approaches (e.g. multiome, spatial transcriptomics..).
 
-Check out [the Verhaak] website
+Check out [the Verhaak] lab website
 
 [the Verhaak]: https://verhaaklab.com/
