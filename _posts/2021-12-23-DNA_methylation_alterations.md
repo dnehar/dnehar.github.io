@@ -14,4 +14,8 @@ neoplastic transformation. We showed that the early pregnancy human placenta sha
 
 ### Publication
 Nordor AV, Nehar-Belaid D, Richon S, Klatzmann D, Bellet D, Fournier T, Dangles-Marie V and Aryee MJ. (2017) The early pregnancy placenta foreshadows DNA 
-methylation alterations of solid tumors. Epigenetics. 12(9):793-803. PMID: 28678605. PMCID: PMC5739102
+methylation alterations of solid tumors. Epigenetics. 12(9):793-803. [PMID:28678605]. [PMCID:PMC5739102].
+
+
+[PMCID:PMC5739102]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5739102/
+[PMID:28678605]: https://pubmed.ncbi.nlm.nih.gov/28678605/
