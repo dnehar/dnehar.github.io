@@ -22,17 +22,17 @@ activity. Profiling of ~82,000 single peripheral blood mononuclear cells from ad
 similar subpopulations in patients with the highest disease activity. This study lays the groundwork for resolving the origin of
 the SLE transcriptional signatures and the disease heterogeneity towards precision medicine applications. 
 
-[link] (https://doi.org/10.1038/s41590-020-0743-0)
+[Link here]
+
 
 ## Data avaibility 
 
 #### 1- Raw counts (publicly available): 
-GEO link:
-https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE135779
+GEO link: [GSE135779]
+
 
 #### 2- fastq files (to be requested on dbGAP): 
-dbGAP link: 
-https://www.ncbi.nlm.nih.gov/projects/gapprev/gap/cgi-bin/study.cgi?study_id=phs002048.v2.p1
+dbGAP link: [phs002048.v2.p1]
 
 ## Scripts availability 
 https://github.com/dnehar/SingleCells_SLE_paper
@@ -45,5 +45,9 @@ In an effort towards understanding the SLE heterogeneity, we used single-cell RN
 
 ![ExperimetalDesign](https://user-images.githubusercontent.com/22060632/147284489-52add15a-3997-4690-89e6-bc0c148c36cb.png)
 
+
+[GSE135779]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE135779
+[Link here]: https://doi.org/10.1038/s41590-020-0743-0
+[phs002048.v2.p1]: https://www.ncbi.nlm.nih.gov/projects/gapprev/gap/cgi-bin/study.cgi?study_id=phs002048.v2.p1
 
 
