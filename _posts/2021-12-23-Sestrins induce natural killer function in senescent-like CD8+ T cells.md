@@ -20,13 +20,11 @@ DAP12 complex was associated with sestrin 2. The genetic inhibition of sestrin 2
 DAP12 and restored TCR signaling in senescent-like CD27−CD28−CD8+ T cells. Therefore, during aging, sestrins induce the reprogramming
 of non-proliferative senescent-like CD27−CD28−CD8+ T cells to acquire a broad-spectrum, innate-like killing activity. 
 
-[link] (https://doi.org/10.1038/s41590-020-0643-3)
+[Link here]
 
 
 ## Data avalability 
-
-  https://ega-archive.org/studies/EGAS00001004255
-  accession number EGAS00001004255
+Accession number [EGAS00001004255]
 
 ## Scripts 
   https://github.com/dnehar/Temra-IL7R-Senescence
@@ -35,3 +33,6 @@ of non-proliferative senescent-like CD27−CD28−CD8+ T cells to acquire a broa
 
 To better understand the mechanisms underlying the accumulation of the highly differentiated CD8+ T cells (known as Temras) during aging, we collaborated with Dr. Arne Akbar (University College London, London, England). I used scRNA-seq to analyze the transcriptomic profiles of purified CD8+ T cells from older adults. I confirmed the observations made by our collaborators using murine models, revealing that senescent CD8+ T cells can develop NK cell-like features over time, a process that was regulated by the stress-sensing proteins called sestrins.
 
+
+[Link here]: https://doi.org/10.1038/s41590-020-0643-3
+[EGAS00001004255]: https://ega-archive.org/studies/EGAS00001004255
