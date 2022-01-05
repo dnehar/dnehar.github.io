@@ -8,7 +8,7 @@ categories:
 ---
 
 
-Nehar-Belaid et al. Nature Immunology, 2020. PMID: 32747814
+Nehar-Belaid et al. Nature Immunology, 2020. [PMID:32747814]
 
 ## Abstract 
 Patients with systemic lupus erythematosus (SLE) display a complex blood transcriptome whose cellular origin is poorly
@@ -50,5 +50,7 @@ In an effort towards understanding the SLE heterogeneity, we used single-cell RN
 [GSE135779]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE135779
 [Link here]: https://doi.org/10.1038/s41590-020-0743-0
 [phs002048.v2.p1]: https://www.ncbi.nlm.nih.gov/projects/gapprev/gap/cgi-bin/study.cgi?study_id=phs002048.v2.p1
-
 [github.com/dnehar/SingleCells_SLE_paper]: https://github.com/dnehar/SingleCells_SLE_paper
+
+[PMID:32747814]: https://pubmed.ncbi.nlm.nih.gov/32747814/
+
