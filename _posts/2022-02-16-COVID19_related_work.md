@@ -6,15 +6,19 @@ categories: media
 
 ---
 
+
 ### Project 1
 
-Epigenetic Memory of COVID-19 in Innate Immune Cells and Their Progenitors
-
-Check out the [preprint] (paper under review)
-
-[preprint]: https://www.biorxiv.org/content/10.1101/2022.02.09.479588v1
+Immune response to SARS-CoV-2 in young children/infants (paper in preparation)
 
 
 ### Project 2 
 
-Immune response to SARS-CoV-2 in young children/infants (paper in preparation)
+Epigenetic Memory of COVID-19 in Innate Immune Cells and Their Progenitors. \
+Collboration with Josefowicz (Weill Cornell Medicine) and Ucar (The Jackson laboratory) labs
+
+A preprint is available [here] (paper under review)
+
+[here]: https://www.biorxiv.org/content/10.1101/2022.02.09.479588v1
+
+
