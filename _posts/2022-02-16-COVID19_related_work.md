@@ -6,7 +6,7 @@ categories: media
 
 ---
 
-### Project 1 
+### Project 1
 
 Epigenetic Memory of COVID-19 in Innate Immune Cells and Their Progenitors
 
