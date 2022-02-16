@@ -1,5 +1,5 @@
 ---
-title:  "Immune response to SARS-CoV-2 in adult and infant patients"
+title:  "Immune response to SARS-CoV-2 infection in young children/infant and adult patients"
 mathjax: true
 layout: post
 categories: media
