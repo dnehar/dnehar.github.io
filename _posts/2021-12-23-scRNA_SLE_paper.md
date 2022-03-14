@@ -8,7 +8,9 @@ categories:
 ---
 
 
-Nehar-Belaid et al. Nature Immunology, 2020. [PMID:32747814]
+Djamel Nehar-Belaid, Seunghee Hong et al. Nature Immunology, 2020. [PMID:32747814]
+
+This work was a close collaboration with the Virginia Pascual Lab at the Gale and Ira Drukier Institute for Children’s Health, Weill Cornell Medicine, NYC.
 
 ## Abstract 
 Patients with systemic lupus erythematosus (SLE) display a complex blood transcriptome whose cellular origin is poorly
