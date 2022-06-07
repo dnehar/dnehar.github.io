@@ -3,7 +3,8 @@ layout: page
 title: ""
 
 ---
-I am a Reseach Scientist at [The Jackon laboratory for Genomic Medecine] in Farmington, CT, USA. 
+
+I received my Ph.D. in Immunology from Sorbone University (Paris) under the mentorship of Prof. David Klatzmann. I completed my postocdoral fellowship at [The Jackon laboratory for Genomic Medecine] (CT, USA) under the mentorship of Prof. Jacques Banchereau.
 
 My ongoing research within the [Verhaak lab] focuses on analyzing the tumor immune microenvironment in brain tumors, using single cell  and spatial transcriptomic approaches
 
