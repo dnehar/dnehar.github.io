@@ -3,7 +3,7 @@ layout: page
 title: ""
 ---
 
-### Backgound 
+### Background 
 I am an immunologist with ~10 years of experience in cellular immunology, computational biology, and transcriptomic data analysis.
 Utilizing my hybrid research profile with both bench (wet lab) and bioinformatics (dry lab) expertise, I have focused my efforts towards understanding immune system dynamics in different contexts including cancer, pregnancy, aging, and autoimmune diseases. 
 
