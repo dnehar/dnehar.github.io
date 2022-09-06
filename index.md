@@ -33,7 +33,7 @@ My ongoing research within the [Verhaak lab] focuses on analyzing the tumor immu
 [My Bibliography]: https://www.ncbi.nlm.nih.gov/myncbi/1Li--NSWc6YQS/bibliography/public/
 
 
-[doi.org/10.3389/fimmu.2022.961094]: https://www.ncbi.nlm.nih.gov/myncbi/1Li--NSWc6YQS/bibliography/public/
+[doi.org/10.3389/fimmu.2022.961094]: https://www.frontiersin.org/articles/10.3389/fimmu.2022.961094/full
 [doi: 10.1016/j.cell.2022.04.038]: https://pubmed.ncbi.nlm.nih.gov/35649412/
 [doi: 10.1371/journal.pone.0266618]: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266618
 [doi: 10.1186/s13059-021-02469-x]: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02469-x
