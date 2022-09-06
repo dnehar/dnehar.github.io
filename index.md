@@ -8,6 +8,8 @@ I received my Ph.D. in Immunology from Sorbone University (Paris) under the ment
 
 My ongoing research within the [Verhaak lab] focuses on analyzing the tumor immune microenvironment in brain tumors, using single cell  and spatial transcriptomic approaches
 
+[Google scholar]
+
 [My Bibliography] (in chronological order):
 
 1.	George PJ, Marches R, **Nehar-Belaid D**, Banchereau J, Lustigman S. _The Th1/Tfh1-biased responses elicited by the rASP-1 innate adjuvant are dependent on TRIF and Type I IFN receptor pathways_. 2022. [doi.org/10.3389/fimmu.2022.961094]. **Front. Immunol.**
@@ -49,4 +51,4 @@ My ongoing research within the [Verhaak lab] focuses on analyzing the tumor immu
 [doi: 10.1172/jci.insight. 85974]: https://insight.jci.org/articles/view/85974
 [doi:10.4049/jimmunol.1501834]: https://www.jimmunol.org/content/early/2015/12/06/jimmunol.1501834
 
-
+[Google scholar]: https://scholar.google.fr/citations?user=zDjOYRUAAAAJ&hl=fr
