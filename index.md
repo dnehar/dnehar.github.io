@@ -8,7 +8,7 @@ I received my Ph.D. in Immunology from Sorbone University (Paris) under the ment
 
 My ongoing research within the [Verhaak lab] focuses on analyzing the tumor immune microenvironment in brain tumors, using single cell  and spatial transcriptomic approaches
 
-[My Bibliography]
+[My Bibliography] (in chronological order):
 
 1.	George PJ, Marches R, **Nehar-Belaid D**, Banchereau J, Lustigman S. The Th1/Tfh1-biased responses elicited by the rASP-1 innate adjuvant are dependent on TRIF and Type I IFN receptor pathways. 2022.[doi.org/10.3389/fimmu.2022.961094]. **_Front. Immunol._**
 2.	Varn FS, Johnson KC, Martinek J, Huse JT, Nasrallah MP, Wesseling P, Cooper LAD, Malta TM, Wade TE, Sabedot TS, Brat D, Gould PV, Wöehrer A, Aldape K, Ismail A, Sivajothi SK, Barthel FP, Kim H, Kocakavuk E, Ahmed N, White K, Datta I, Moon HE, Pollock S, Goldfarb C, Lee GH, Garofano L, Anderson KJ, **Nehar-Belaid D**, Barnholtz-Sloan JS, Bakas S, Byrne AT, D'Angelo F, Gan HK, Khasraw M, Migliozzi S, Ormond DR, Paek SH, Van Meir EG, Walenkamp AME, Watts C, Weiss T, Weller M, Palucka K, Stead LF, Poisson LM, Noushmehr H, Iavarone A, Verhaak RGW. Glioma progression is shaped by genetic evolution and microenvironment interactions. **_Cell_**  2022 May 24.[doi: 10.1016/j.cell.2022.04.038]. PMID: 35649412
