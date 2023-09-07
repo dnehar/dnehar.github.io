@@ -7,7 +7,7 @@ title: ""
 I am an immunologist with ~10 years of experience in cellular immunology, computational biology, and transcriptomic data analysis.
 Utilizing my hybrid research profile with both bench (wet lab) and bioinformatics (dry lab) expertise, I have focused my efforts towards understanding immune system dynamics in different contexts including cancer, pregnancy, aging, and autoimmune diseases. 
 
-Currently, I am a Reseach Scientist at The Jackon laboratory for Genomic Medecine ([Verhaak lab]).
+Currently, I am a Reseach Scientist at The Jackon laboratory for Genomic Medecine ([Ucar lab]).
 
 ### Postdoctoral work: Banchereau lab - JAX-GM (Farmington, CT, USA)
 
@@ -19,7 +19,7 @@ During my predoctoral training ([Klatzmann lab]; University Pierre & Marie Curie
 
 
 [Klatzmann lab]: https://www.i3-immuno.fr/
-[Verhaak lab]: https://verhaaklab.com/
+[Ucar lab]: https://www.jax.org/research-and-faculty/research-labs/the-ucar-lab
 
 
 
