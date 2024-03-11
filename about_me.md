@@ -5,7 +5,7 @@ title: ""
 
 ### Background 
 I am an immunologist with ~13 years of experience in cellular immunology, computational biology, and transcriptomic data analysis.
-Utilizing my hybrid research profile with both bench (wet lab) and bioinformatics (dry lab) expertise, I have focused my efforts towards understanding immune system dynamics in different contexts including cancer, pregnancy, aging, and autoimmune diseases. Currently, I am a Reseach Scientist at The Jackon laboratory for Genomic Medecine ([Ucar lab]).
+Utilizing my hybrid research profile with both bench (wet lab) and bioinformatics (dry lab) expertise, I have focused my efforts towards understanding immune system dynamics in different contexts including cancer, pregnancy, aging, and autoimmune diseases. Currently, I am a Research Scientist at The Jackon laboratory for Genomic Medicine ([Ucar lab]).
 
 ### Postdoctoral work: Banchereau lab - JAX-GM (Farmington, CT, USA)
 
