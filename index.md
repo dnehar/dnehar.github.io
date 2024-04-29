@@ -4,7 +4,7 @@ title: ""
 
 ---
 
-I received my Ph.D. in Immunology from Sorbone University (Paris) under the mentorship of Dr. David Klatzmann. I completed my postdoctoral fellowship at [The Jackson laboratory for Genomic Medecine] (CT, USA) under the mentorship of Dr. Jacques Banchereau. Within the [Verhaak lab] I led all efforts to dissect the tumor immune microenvironment in primary and recurrent brain tumors. 
+I received my Ph.D. in Immunology from Sorbone University (Paris) under the mentorship of Dr. David Klatzmann. I completed my postdoctoral fellowship at [The Jackson laboratory for Genomic Medicine] (CT, USA) under the mentorship of Dr. Jacques Banchereau. Within the [Verhaak lab] I led all efforts to dissect the tumor immune microenvironment in primary and recurrent brain tumors. 
 My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven approaches to explore human aging and immune disorders including pediatric COVID-19 and lupus.
 
 
@@ -32,7 +32,7 @@ My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven
 
 
 [Verhaak lab]: https://verhaaklab.com/
-[The Jackson laboratory for Genomic Medecine]: https://www.jax.org/
+[The Jackson laboratory for Genomic Medicine]: https://www.jax.org/
 [Ucar lab]: https://www.jax.org/research-and-faculty/research-labs/the-ucar-lab
 [Google scholar]: https://scholar.google.fr/citations?user=zDjOYRUAAAAJ&hl=fr
 [My Bibliography]: https://www.ncbi.nlm.nih.gov/myncbi/1Li--NSWc6YQS/bibliography/public/
