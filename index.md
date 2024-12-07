@@ -12,7 +12,7 @@ My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven
 
 -> [My Bibliography] (in chronological order): # = co-first authors
 
-1.	Angarola BL, Sharma S, Neerja Katiyar N, Kang HG, **Nehar-Belaid D**, [4 others], Palucka K, Chuang JH, Korstanje R, Ucar D, Anczukόw O. Comprehensive single cell aging atlas of mammary tissues reveals shared epigenomic and transcriptomic signatures of aging and cancer. Nature Aging. 2024 Nov 25. [https://doi.org/10.1038/s43587-024-00751-8]. PMID: 39587369. 
+1.	Angarola BL, Sharma S, Neerja Katiyar N, Kang HG, **Nehar-Belaid D**, [4 others], Palucka K, Chuang JH, Korstanje R, Ucar D, Anczukόw O. Comprehensive single cell aging atlas of mammary tissues reveals shared epigenomic and transcriptomic signatures of aging and cancer. **Nature Aging**. 2024 Nov 25. [https://doi.org/10.1038/s43587-024-00751-8]. PMID: 39587369. 
 
 
 2. Caielli S, Balasubramanian P, Balaji U, Wan Z, Baisch J, Walters L, Smitherman C,  **Nehar-Belaid D**, Marches R, [3 others], Banchereau J.F, Gu J, Wright T and Pascual V. Type I Interferon promotes MxA-dependent IL-1B release in SLE monocytes.  **Immunity**. 2024 Oct 3. [10.1016/j.immuni.2024.09.004]. PMID: 39378884.
