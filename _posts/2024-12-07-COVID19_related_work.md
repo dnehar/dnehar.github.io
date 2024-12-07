@@ -20,7 +20,7 @@ Differences in immune profiles of children and adults with COVID-19 have been pr
 Epigenetic Memory of COVID-19 in Innate Immune Cells and Their Progenitors. \
 Collboration with Josefowicz (Weill Cornell Medicine) and Ucar (The Jackson laboratory) labs
 
-This project was published in Cell in 2033 and can be found [here]: 
+This project was published in Cell in 2023 and can be found [here]: 
 
 #### Highlights: 
 
