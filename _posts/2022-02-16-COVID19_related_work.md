@@ -6,7 +6,7 @@ categories: media
 
 ---
 
-### Project 1: pediatric COVID-19 
+### Project 1: pediatric COVID-19
 
 Our objective was to assess the Immune perturbations induced by SARS-CoV2 in two-month-old infants with mild and severe disease. We also compared our findings to children and adult cohorts. 
 
