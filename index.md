@@ -12,7 +12,7 @@ My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven
 
 -> [My Bibliography] (in chronological order): # = co-first authors
 
-1.	**Nehar-Belaid D**, Mejías A, Xu Z, Marches R, Yerrabelli R, [7 others], Garcia-Sastre A, Ucar D, Banchereau J, Pascual V, Ramilo R. Immune perturbations induced by SARS-CoV2 in infants vary with disease severity and differ from adults’ responses. 2024 (**in revision**). [Preprint: 10.2120S3/rs.3.rs-5176621/v1]
+1.	**Nehar-Belaid D**, Mejías A, Xu Z, Marches R, Yerrabelli R, [7 others], Garcia-Sastre A, Ucar D, Banchereau J, Pascual V, Ramilo O. Immune perturbations induced by SARS-CoV2 in infants vary with disease severity and differ from adults’ responses. 2024 (**in revision**). [Preprint: 10.2120S3/rs.3.rs-5176621/v1]
 
 2.	Angarola BL, Sharma S, Neerja Katiyar N, Kang HG, **Nehar-Belaid D**, [4 others], Palucka K, Chuang JH, Korstanje R, Ucar D, Anczukόw O. Comprehensive single cell aging atlas of mammary tissues reveals shared epigenomic and transcriptomic signatures of aging and cancer. **Nature Aging**. 2024 Nov 25. [doi.org/10.1038/s43587-024-00751-8]. PMID: 39587369. 
 
@@ -21,7 +21,7 @@ My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven
 
 4. Ravichandran S, Erra-Diaz F, Karakaslar O, Marches R, Kenyon-Pesce L, Rossi R, Chaussabel D, **Nehar-Belaid D**, Pascual V, [3 others], Kuchel GA, Banchereau J, Duygu D. Distinct baseline immune characteristics associated with responses to conjugated and unconjugated pneumococcal polysaccharide vaccines in older adults. **Nature Immunology**. 2024 Jan 5. [doi:10.1038/s41590-023-01717-5]. PMID: 38182669.
    
-5. Nouri N#, Giacomelli Cao R#, Bunsow E#, **Nehar-Belaid D#**, Marches R, [7 others], Mejías A, Banchereau J, Pascual V, Ramilo R. Longitudinal Immune Profiling of Young Infants Initial Vaccinations Reveals Heterogeneous Serological Responses and Extensive but Reversible Transcriptional Changes in Most Immune Cell Types. **Nature Communications**. 2023 Dec 2;14(1):7976. [doi:0.1038/s41467-023-43758-2]. PMID: 38042900.
+5. Nouri N#, Giacomelli Cao R#, Bunsow E#, **Nehar-Belaid D#**, Marches R, [7 others], Mejías A, Banchereau J, Pascual V, Ramilo O. Longitudinal Immune Profiling of Young Infants Initial Vaccinations Reveals Heterogeneous Serological Responses and Extensive but Reversible Transcriptional Changes in Most Immune Cell Types. **Nature Communications**. 2023 Dec 2;14(1):7976. [doi:0.1038/s41467-023-43758-2]. PMID: 38042900.
    
 6. **Nehar-Belaid D**, Sokolowski M, Baarathi S, Banchereau J, Chaussabel D, Ucar D. Baseline immune states (BIS) associated with vaccine responsiveness and factors that shape the BIS. **Seminars in Immunology**. 2023 [doi.org/10.1016/j.smim.2023.101842].  PMID: 37717525.
    
