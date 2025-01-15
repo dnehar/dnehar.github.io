@@ -61,7 +61,7 @@ My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven
 [Google scholar]: https://scholar.google.fr/citations?user=zDjOYRUAAAAJ&hl=fr
 [My Bibliography]: https://www.ncbi.nlm.nih.gov/myncbi/1Li--NSWc6YQS/bibliography/public/
 
-[Preprint: doi.org/10.21203/rs.3.rs-5640872/v1] : https://www.researchsquare.com/article/rs-5640872/v1
+[Preprint: doi.org/10.21203/rs.3.rs-5640872/v1]: https://www.researchsquare.com/article/rs-5640872/v1
 [Preprint: 10.2120S3/rs.3.rs-5176621/v1]: https://www.researchsquare.com/article/rs-5176621/v1
 [doi.org/10.1038/s43587-024-00751-8]: https://doi.org/10.1038/s43587-024-00751-8
 [10.1016/j.immuni.2024.09.004]: https://doi.org/10.1016/j.immuni.2024.09.004
