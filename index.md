@@ -12,7 +12,7 @@ My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven
 
 -> [My Bibliography] (in chronological order): # = co-first authors
 
-1. Thibodeau A#, Mejias A#, **Nehar-Belaid D**, Marches R, [4 others], Pascual V, Banchereau J#, Ramilo O#, Ucar D#. Infants display reduced NK cell responses in RSV and increased inflammatory responses in SARS-CoV-2 infections. 2025 (in review). [Preprint: doi.org/10.21203/rs.3.rs-5640872/v1] .
+1. Thibodeau A#, Mejias A#, **Nehar-Belaid D**, Marches R, [4 others], Pascual V, Banchereau J#, Ramilo O#, Ucar D#. Infants display reduced NK cell responses in RSV and increased inflammatory responses in SARS-CoV-2 infections. 2025 (in review). [Preprint: doi.org/10.21203/rs.3.rs-5640872/v1]
 
 2.	**Nehar-Belaid D**, Mejías A, Xu Z, Marches R, Yerrabelli R, [7 others], Garcia-Sastre A, Ucar D, Banchereau J, Pascual V, Ramilo O. Immune perturbations induced by SARS-CoV2 in infants vary with disease severity and differ from adults’ responses. 2024 (**in revision**). [Preprint: 10.2120S3/rs.3.rs-5176621/v1]
 
