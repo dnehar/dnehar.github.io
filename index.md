@@ -12,11 +12,11 @@ My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven
 
 -> [My Bibliography] (in chronological order): # = co-first authors
 
-1. Thibodeau A#, Mejias A#, **Nehar-Belaid D**, Marches R, [4 others], Pascual V, Banchereau J#, Ramilo O#, Ucar D#. Infants display reduced NK cell responses in RSV and increased inflammatory responses in SARS-CoV-2 infections. 2025 (**in review**). [Preprint: doi.org/10.21203/rs.3.rs-5640872/v1]
+1.**Nehar-Belaid D**, Mejías A, Xu Z, Marches R, Yerrabelli R, [7 others], Garcia-Sastre A, Ucar D, Banchereau J, Pascual V, Ramilo O. Immune perturbations induced by SARS-CoV2 in infants vary with disease severity and differ from adults’ responses. 2025 (**Nature Communications (accepted in principle**). [Preprint: 10.2120S3/rs.3.rs-5176621/v1]
 
-2.	**Nehar-Belaid D**, Mejías A, Xu Z, Marches R, Yerrabelli R, [7 others], Garcia-Sastre A, Ucar D, Banchereau J, Pascual V, Ramilo O. Immune perturbations induced by SARS-CoV2 in infants vary with disease severity and differ from adults’ responses. 2024 (**in revision**). [Preprint: 10.2120S3/rs.3.rs-5176621/v1]
+2. Thibodeau A#, Mejias A#, **Nehar-Belaid D**, Marches R, [4 others], Pascual V, Banchereau J#, Ramilo O#, Ucar D#. Infants display reduced NK cell responses in RSV and increased inflammatory responses in SARS-CoV-2 infections. 2025 (**in review**). [Preprint: doi.org/10.21203/rs.3.rs-5640872/v1]
 
-3.	Angarola BL, Sharma S, Neerja Katiyar N, Kang HG, **Nehar-Belaid D**, [4 others], Palucka K, Chuang JH, Korstanje R, Ucar D, Anczukόw O. Comprehensive single cell aging atlas of mammary tissues reveals shared epigenomic and transcriptomic signatures of aging and cancer. **Nature Aging**. 2024 Nov 25. [doi.org/10.1038/s43587-024-00751-8]. PMID: 39587369. 
+3. Angarola BL, Sharma S, Neerja Katiyar N, Kang HG, **Nehar-Belaid D**, [4 others], Palucka K, Chuang JH, Korstanje R, Ucar D, Anczukόw O. Comprehensive single cell aging atlas of mammary tissues reveals shared epigenomic and transcriptomic signatures of aging and cancer. **Nature Aging**. 2024 Nov 25. [doi.org/10.1038/s43587-024-00751-8]. PMID: 39587369. 
 
 5. Caielli S, Balasubramanian P, Balaji U, Wan Z, Baisch J, Walters L, Smitherman C,  **Nehar-Belaid D**, Marches R, [3 others], Banchereau J.F, Gu J, Wright T and Pascual V. Type I Interferon promotes MxA-dependent IL-1B release in SLE monocytes.  **Immunity**. 2024 Oct 3. [10.1016/j.immuni.2024.09.004]. PMID: 39378884.
 
