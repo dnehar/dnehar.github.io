@@ -10,11 +10,11 @@ My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven
 
 -> [Google scholar]
 
--> [My Bibliography] (in chronological order): # = co-first authors
+-> [My Bibliography] (in chronological order): 	<sup> # </sup> denotes equal contribution
 
-1. **Nehar-Belaid D**, Mejías A, Xu Z, Marches R, Yerrabelli R, Chen G, Mertz S, Ye F, Sanchez P, Tsang J, Aydillo T, Miorin L, Cupic A Garcia-Sastre A, Ucar D, Banchereau J#, Pascual V#, Ramilo O#. Immune perturbations induced by SARS-CoV2 in infants vary with disease severity and differ from adults’ responses. **Nature Communications**. 2025 (accepted in principle). [Preprint: 10.2120S3/rs.3.rs-5176621/v1]
+1. **Nehar-Belaid D<sup># </sup>**, Mejías A<sup># </sup>, Xu Z, Marches R, Yerrabelli R, Chen G, Mertz S, Ye F, Sanchez P, Tsang J, Aydillo T, Miorin L, Cupic A Garcia-Sastre A, Ucar D, Banchereau J<sup># </sup> , Pascual V<sup># </sup> , Ramilo O<sup># </sup> . Immune perturbations induced by SARS-CoV2 in infants vary with disease severity and differ from adults’ responses. **Nature Communications**. 2025 (accepted in principle). [Preprint: 10.2120S3/rs.3.rs-5176621/v1]
 
-2. Thibodeau A#, Mejias A#, **Nehar-Belaid D**, Marches R, [4 others], Pascual V, Banchereau J#, Ramilo O#, Ucar D#. Infants display reduced NK cell responses in RSV and increased inflammatory responses in SARS-CoV-2 infections. 2025 (**in review**). [Preprint: doi.org/10.21203/rs.3.rs-5640872/v1]
+2. Thibodeau A<sup># </sup> , Mejias A<sup># </sup> , **Nehar-Belaid D**, Marches R, [4 others], Pascual V, Banchereau J<sup> # </sup>, Ramilo O<sup> # </sup>, Ucar D<sup> # </sup>. Infants display reduced NK cell responses in RSV and increased inflammatory responses in SARS-CoV-2 infections. 2025 (**in review**). [Preprint: doi.org/10.21203/rs.3.rs-5640872/v1]
 
 3. Angarola BL, Sharma S, Neerja Katiyar N, Kang HG, **Nehar-Belaid D**, [4 others], Palucka K, Chuang JH, Korstanje R, Ucar D, Anczukόw O. Comprehensive single cell aging atlas of mammary tissues reveals shared epigenomic and transcriptomic signatures of aging and cancer. **Nature Aging**. 2024 Nov 25. [doi.org/10.1038/s43587-024-00751-8]. PMID: 39587369. 
 
@@ -22,7 +22,7 @@ My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven
 
 6. Ravichandran S, Erra-Diaz F, Karakaslar O, Marches R, Kenyon-Pesce L, Rossi R, Chaussabel D, **Nehar-Belaid D**, Pascual V, [3 others], Kuchel GA, Banchereau J, Duygu D. Distinct baseline immune characteristics associated with responses to conjugated and unconjugated pneumococcal polysaccharide vaccines in older adults. **Nature Immunology**. 2024 Jan 5. [doi:10.1038/s41590-023-01717-5]. PMID: 38182669.
    
-7. Nouri N#, Giacomelli Cao R#, Bunsow E#, **Nehar-Belaid D#**, Marches R, [7 others], Mejías A, Banchereau J, Pascual V, Ramilo O. Longitudinal Immune Profiling of Young Infants Initial Vaccinations Reveals Heterogeneous Serological Responses and Extensive but Reversible Transcriptional Changes in Most Immune Cell Types. **Nature Communications**. 2023 Dec 2;14(1):7976. [doi:0.1038/s41467-023-43758-2]. PMID: 38042900.
+7. Nouri N<sup># </sup>, Giacomelli Cao R<sup># </sup>, Bunsow E<sup># </sup>, **Nehar-Belaid D<sup># </sup>**, Marches R, [7 others], Mejías A, Banchereau J, Pascual V, Ramilo O. Longitudinal Immune Profiling of Young Infants Initial Vaccinations Reveals Heterogeneous Serological Responses and Extensive but Reversible Transcriptional Changes in Most Immune Cell Types. **Nature Communications**. 2023 Dec 2;14(1):7976. [doi:0.1038/s41467-023-43758-2]. PMID: 38042900.
    
 8. **Nehar-Belaid D**, Sokolowski M, Baarathi S, Banchereau J, Chaussabel D, Ucar D. Baseline immune states (BIS) associated with vaccine responsiveness and factors that shape the BIS. **Seminars in Immunology**. 2023 [doi.org/10.1016/j.smim.2023.101842].  PMID: 37717525.
    
@@ -40,7 +40,7 @@ My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven
 
 15.	**Nehar-Belaid D**, Hong S, Marches R, Chen G, Bolisetty M, Baisch J, Walters L, Punaro M, Rossi R, Chung C-H, Huynh R, Singh P, Flynn W.F, Tabanor J-A, Kuchipudi N, Mejias A, Collet M, Lucido A-L, Palucka K, Robson P, Lakshminarayanan S, Ramilo O, Wright T, Pascual V and Banchereau J. _Mapping SLE heterogeneity at the single cell level_. **Nature Immunology**. 2020 Aug 3. [doi: 10.1038/s41590-020-0743-0]. [PMID:32747814]
 
-16.	Pereira BI#, De Maeyer RPH#, Covre LP#, **Nehar-Belaid D#**, Lanna A, Ward S, Marches R, Chambers ES, Gomes DCO, Riddell NE, Maini MK, Teixeira VH, Janes SM, Gilroy DW, Larbi A, Mabbott NA, Ucar D, Kuchel GA, Henson SM, Strid J, Lee JH, Banchereau J, Akbar AN. _Sestrins Induce Natural Killer Function In Senescent-like CD8+ T Cells_. **Nature Immunology**. 2020 Mar 30. [doi: 10.1038/s41590-020-0643-3]. [PMID:32231301]
+16.	Pereira BI<sup># </sup> , De Maeyer RPH<sup># </sup> , Covre LP<sup># </sup> , **Nehar-Belaid D<sup># </sup>**, Lanna A, Ward S, Marches R, Chambers ES, Gomes DCO, Riddell NE, Maini MK, Teixeira VH, Janes SM, Gilroy DW, Larbi A, Mabbott NA, Ucar D, Kuchel GA, Henson SM, Strid J, Lee JH, Banchereau J, Akbar AN. _Sestrins Induce Natural Killer Function In Senescent-like CD8+ T Cells_. **Nature Immunology**. 2020 Mar 30. [doi: 10.1038/s41590-020-0643-3]. [PMID:32231301]
 
 17.	Márquez EJ, Chung C-H, Marches R, Rossi RJ, **Nehar-Belaid D**, Mellert DJ, Kuchel GA, Banchereau J, Ucar D. _Sexual-dimorphism in human immune system aging_. **Nature Communications**. 2020 Feb 6;11(1):751. [doi: 10.1038/s41467-020-14396-9]. PMID: 32029736
 
