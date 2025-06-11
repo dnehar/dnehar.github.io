@@ -6,7 +6,7 @@ categories: media
 
 ---
 
-### Project 1: pediatric COVID-19: [Nature Communications] 2025 <br> <br>
+### Project 1: pediatric COVID-19: [Nehar-Belaid et al] 2025 <br> <br>
 
 💡 We applied a multidimensional approach to decipher the immune responses to SARS-CoV-2 infection in 2-month-old hospitalized infants. We analyzed: (i) single cell RNA-seq from PBMCs, (ii) serum cytokines and (iii) antibody responses.
 
@@ -18,7 +18,7 @@ categories: media
 
 👉 This study was published in [Nature Communications] in 2025. <br> <br> 
 
-### Project 2: adult COVID-19  - Epigenetic memory - [Cell] 2023 <br><br>
+### Project 2: adult COVID-19  | Epigenetic memory [Cheong et al] 2023 <br><br>
 
 Epigenetic Memory of COVID-19 in Innate Immune Cells and Their Progenitors. \
 Collboration with Josefowicz (Weill Cornell Medicine) and Ucar (The Jackson laboratory) labs
@@ -38,6 +38,8 @@ Inflammation can trigger lasting phenotypes in immune and non-immune cells. Whet
 
 
 [Nature Communications]: https://rdcu.be/emkNa 
+[Nehar-Belaid et al]: https://rdcu.be/emkNa 
 [Cell]: https://www.cell.com/cell/fulltext/S0092-8674(23)00796-1?_=
+[Cheong et al]: https://www.cell.com/cell/fulltext/S0092-8674(23)00796-1?_=
 
 
