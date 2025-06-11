@@ -18,7 +18,7 @@ categories: media
 
 👉 This study was published in [Nature Communications] in 2025. <br> <br> 
 
-### Project 2: adult COVID-19  | Epigenetic memory [Cheong et al] Cell, 2023 <br><br>
+### Project 2: Epigenetic memory of COVID-19 in young adults: [Cheong et al] Cell, 2023 <br><br>
 
 Epigenetic Memory of COVID-19 in Innate Immune Cells and Their Progenitors. \
 Collboration with Josefowicz (Weill Cornell Medicine) and Ucar (The Jackson laboratory) labs
