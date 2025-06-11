@@ -7,9 +7,16 @@ title: ""
 
 Over the past 14 years, I have gained multi-disciplinary training in cancer immunology, autoimmunity, immune aging, early life immunity, and computational biology. My current research employs systems immunology approaches to investigate immune remodeling across the human lifespan. 
 
-### Postdoctoral work: Banchereau lab - JAX-GM (Farmington, CT, USA)
+### The Jackson Laboratory for Genomic Medicine | Farmington, CT, USA
+Research Scientist | 2023 - now (Ucar lab) <br>
+Associate Research Scientist | 2019 - 2023 (Banchereau lab, then Verhaak lab)  <br>
+Postdoctoral associate | 2016 - 2019 (Banchereau lab) <br>
 
-Within the Banchereau lab (2016-2021), I have been developing computational pipelines to analyze human blood cell transcriptomic data at the single cell resolution in different contexts, including autoimmunity (e.g. systemic lupus erythematosus; SLE) and aging. My initial work sought to resolve the transcriptional signatures described decades ago in SLE using cutting-edge single cell RNA-seq approaches. This analysis allowed a more accurate classification of lupus patients based on specific cell types. This first direct comparison of childhood and adult SLE confirmed the presence of similar transcriptional patterns across age groups and enabled patient classification according to disease activity. Also, in collaboration with the Akbar lab (at UCL, London, England) we could demonstrate that  senescent CD8+ T cells can develop NK cell-like features over time, a process that was regulated by the stress-sensing proteins called sestrins.
+Throughout my career at the Jackson lab, I have successfully led collaborative studies and developed computational frameworks to analyze genomic datasets, including single-cell (scRNA-seq), ATAC-seq, and spatial transcriptomics. My primary projects include: <br>
+**1) Pediatric SLE patient classification through single-cell derived genomic signatures**. I developed computational pipelines using bulk and scRNA-seq to analyze large-scale datasets and enhance the accuracy of SLE patient classification. <br>
+**2) NK-like senescent CD8+ T cells that expand with age**. I built computational frameworks to profile age-related immune senescence. <br>
+**3) Longitudinal evaluation of the immune response to the first set of routine vaccines in infants**. I contributed significantly to the creation of computational models for studying immune cell dynamics in two-month-old infants. <br>
+**4) Characterization of the immune perturbations in two-month-old infants with severe COVID-19**. I leveraged scRNA-seq, cytokine profiling, and antibody analysis to develop and automated a multi-omic computational framework for studying COVID-19 in infants and compare their immune responses to those of infected children and adults. <br>
 
 ### Ph.D. work - Early research: Klatzmann lab (Paris, France)
 
