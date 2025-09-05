@@ -38,12 +38,12 @@ My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven
 24.  **Nehar-Belaid D**, Courau T, Dérian N, Florez ML, Ruocco MG and Klatzmann D. _Regulatory T cells similarly orchestrate tolerance to fetuses and tumors_. **The Journal of Immunology**. January 15, 2016, 196 (2) 678- 690; [doi:10.4049/jimmunol.1501834]. PMID:26643476. <br/><br/>
 
 ### Under Review Manuscripts: 
-1.  **Nehar-Belaid D**<sup>$</sup>, Thibodeau A, Eroglu A, Marches R, Eryilmaz G, Unutmaz D, Mejias A, Pascual V, Kuchel G<sup>#</sup>, Ramilo O<sup>#</sup>, Banchereau J<sup>#</sup>, Ucar D<sup>#,$</sup>. _Single-cell map of the human immune system across the lifespan reveals infant-specific immune signatures_. <sup>$</sup>corresponding authors. PMID: 40766403. [Preprint: www.biorxiv.org/content/10.1101/2025.07.28.667181v1]  <br/> <br/>
+1.  **Nehar-Belaid D**<sup>$</sup>, Thibodeau A, Eroglu A, Marches R, Eryilmaz G, Unutmaz D, Mejias A, Pascual V, Kuchel G<sup>#</sup>, Ramilo O<sup>#</sup>, Banchereau J<sup>#</sup>, Ucar D<sup>#,$</sup>. _Single-cell map of the human immune system across the lifespan reveals infant-specific immune signatures_.  [Preprint: www.biorxiv.org/content/10.1101/2025.07.28.667181v1]. PMID:40766403.  <sup>$</sup>corresponding authors. <br/> <br/>
 
-2.	Thibodeau A<sup>#</sup> , Mejias A<sup>#</sup> , **Nehar-Belaid D**, Marches R, [4 others], Pascual V, Banchereau J<sup> #</sup>, Ramilo O<sup>#</sup>, Ucar D<sup>#</sup>. _Infants display reduced NK cell responses in RSV and increased inflammatory responses in SARS-CoV-2 infections_. [Preprint: doi.org/10.21203/rs.3.rs-5640872/v1] <br/> <br/>
+2.	Thibodeau A<sup>#</sup> , Mejias A<sup>#</sup> , **Nehar-Belaid D**, Marches R, [4 others], Pascual V, Banchereau J<sup> #</sup>, Ramilo O<sup>#</sup>, Ucar D<sup>#</sup>. _Infants display reduced NK cell responses in RSV and increased inflammatory responses in SARS-CoV-2 infections_. [Preprint: doi.org/10.21203/rs.3.rs-5640872/v1]. PMID: 39877087. <br/> <br/>
 
 3.  Grabauskas T, Verschoor C.P, Trinity L, Marches R, Thibodeau A, **Nehar-Belaid D**, Eryilmaz G, Picard E, Kuo C-L, Schmader K.E,  Colon-Emeric C, Whitson H.E, Paust S, García-Sastre A, Banchereau J, Kuchel G.A, Ucar D. _CMV reshapes lymphoid immunity in aging: a single-cell atlas with predictive modeling_.
-[Preprint: doi.org/10.1101/2025.06.24.661167] <br/> <br/>
+[Preprint: doi.org/10.1101/2025.06.24.661167]. PMID: 40666903.  <br/> <br/>
 
 [Verhaak lab]: https://verhaaklab.com/
 [The Jackson laboratory for Genomic Medicine]: https://www.jax.org/
