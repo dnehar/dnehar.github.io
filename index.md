@@ -12,10 +12,11 @@ My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven
 -> [Google scholar]
 
 -> [My Bibliography] (in chronological order): 	<sup> # </sup> denotes equal contribution <br/>
+
 1.	**Nehar-Belaid D<sup>#</sup>**, Mejías A<sup>#</sup>, Xu Z, Marches R, Yerrabelli R, Chen G, Mertz S, Ye F, Sanchez P, Tsang J, Aydillo T, Miorin L, Cupic A, Garcia-Sastre A, Ucar D, Banchereau J<sup>#</sup> , Pascual V<sup>#</sup> , Ramilo O<sup>#</sup> . _Immune perturbations induced by SARS-CoV2 in infants vary with disease severity and differ from adults’ responses_. **Nature Communications**. 2025 May 16;16(1):4562. [doi:10.1038/s41467-025-59411-z]. PMID: 40379618.  <br/> <br/>
 2.	Spitzer A<sup>#</sup>, Johnson KC<sup>#</sup>, Nomura M<sup>#</sup>, Garofano L<sup>#</sup>, **Nehar-Belaid D**, Galili Darnell, [35 others], Lasorella A<sup>#</sup>, Iavarone A<sup>#</sup>, Iavarone A<sup>#</sup>, Verhaak RGW<sup>#</sup>, Tirosh I<sup>#</sup>, Suvà M<sup>#</sup>. _The Multi-Layered Transcriptional Architecture of Glioblastoma Ecosystems_. **Nature Genetics**. 2025 May;57(5):1168-1178. [doi:10.1038/s41588-025-02168-4]. PMID: 40346362.  <br/> <br/>
 3.	Nomura M<sup>#</sup>, Spitzer A<sup>#</sup>, Garofano L<sup>#</sup>, Johnson KC<sup>#</sup>, **Nehar-Belaid D**, Galili Darnell, [35 others], Lasorella A<sup> # </sup>, Verhaak RGW<sup>#</sup>, Iavarone A<sup>#</sup>, Suvà M<sup>#</sup>, Tirosh I<sup>#</sup>. _Deciphering the Cellular Evolution of Glioblastoma by Integrative Single-Cell Genomics_. **Nature Genetics**. 2025 May;57(5):1155-1167. [doi:10.1038/s41588-025-02167-5]. PMID: 40346361. <br/><br/>
-4.	Thibodeau A<sup>#</sup> , Mejias A<sup>#</sup> , **Nehar-Belaid D**, Marches R, [4 others], Pascual V, Banchereau J<sup> #</sup>, Ramilo O<sup>#</sup>, Ucar D<sup>#</sup>. _Infants display reduced NK cell responses in RSV and increased inflammatory responses in SARS-CoV-2 infections_. 2025 (under review). [Preprint: doi.org/10.21203/rs.3.rs-5640872/v1] <br/> <br/>
+
 5.	Angarola BL, Sharma S, Neerja Katiyar N, Kang HG, **Nehar-Belaid D**, [4 others], Palucka K, Chuang JH, Korstanje R, Ucar D, Anczukόw O. _Comprehensive single cell aging atlas of mammary tissues reveals shared epigenomic and transcriptomic signatures of aging and cancer_. **Nature Aging**. 2025 Jan;5(1):122-143. [doi.org/10.1038/s43587-024-00751-8]. PMID: 39587369.<br/> <br/>
 6.	Caielli S, Balasubramanian P, Balaji U, Wan Z, Baisch J, Walters L, Smitherman C,  **Nehar-Belaid D**, Marches R, [3 others], Banchereau J.F, Gu J, Wright T and Pascual V. _Type I Interferon promotes MxA-dependent IL-1B release in SLE monocytes_.  **Immunity**. 2024 Nov 12;57(11):2497-2513.e12. [doi:10.1016/j.immuni.2024.09.004]. PMID: 39378884.<br/><br/>
 7.	Ravichandran S, Erra-Diaz F, Karakaslar O, Marches R, Kenyon-Pesce L, Rossi R, Chaussabel D, **Nehar-Belaid D**, Pascual V, [3 others], Kuchel GA, Banchereau J, Ucar D. _Distinct baseline immune characteristics associated with responses to conjugated and unconjugated pneumococcal polysaccharide vaccines in older adults_. **Nature Immunology**. 2024 Jan 5. [doi:10.1038/s41590-023-01717-5]. PMID: 38182669. <br/><br/>
@@ -36,12 +37,22 @@ My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven
 23.  Courau T, **Nehar-Belaid D**, Florez LM, Levacher B, Vazquez T, Brimaud F, Bellier B and Klatzmann D. _TGFβ and VEGF cooperatively control the immunotolerant tumor environment and the efficacy of cancer immunotherapies_. **The Journal of Clinical Investigation Insights**. 2016;1(9):e85974. [doi: 10.1172/jci.insight. 85974]. PMID:27699271. <br/><br/>
 24.  **Nehar-Belaid D**, Courau T, Dérian N, Florez ML, Ruocco MG and Klatzmann D. _Regulatory T cells similarly orchestrate tolerance to fetuses and tumors_. **The Journal of Immunology**. January 15, 2016, 196 (2) 678- 690; [doi:10.4049/jimmunol.1501834]. PMID:26643476. <br/><br/>
 
+### Under Review Manuscripts:
+1.  **Nehar-Belaid D** <sup>$</sup>, Thibodeau A, Eroglu A, Marches R, Eryilmaz G, Unutmaz D, Mejias A, Pascual V, Kuchel G<sup>#</sup>, Ramilo O<sup>#</sup>, Banchereau J<sup>#</sup>, Ucar D<sup>#</sup>,<sup>$</sup>. _Single-cell map of the human immune system across the lifespan reveals infant-specific immune signatures_. <sup$<supcorresponding authors. PMID: 40766403. [Preprint: www.biorxiv.org/content/10.1101/2025.07.28.667181v1]  <br/> <br/>
+
+2.	Thibodeau A<sup>#</sup> , Mejias A<sup>#</sup> , **Nehar-Belaid D**, Marches R, [4 others], Pascual V, Banchereau J<sup> #</sup>, Ramilo O<sup>#</sup>, Ucar D<sup>#</sup>. _Infants display reduced NK cell responses in RSV and increased inflammatory responses in SARS-CoV-2 infections_. [Preprint: doi.org/10.21203/rs.3.rs-5640872/v1] <br/> <br/>
+
+3.  Grabauskas T, Verschoor C.P, Trinity L, Marches R, Thibodeau A, **Nehar-Belaid D**, Eryilmaz G, Picard E, Kuo C-L, Schmader K.E,  Colon-Emeric C, Whitson H.E, Paust S, García-Sastre A, Banchereau J, Kuchel G.A, Ucar D. _CMV reshapes lymphoid immunity in aging: a single-cell atlas with predictive modeling_.
+[Preprint: doi.org/10.1101/2025.06.24.661167] <br/> <br/>
+
 [Verhaak lab]: https://verhaaklab.com/
 [The Jackson laboratory for Genomic Medicine]: https://www.jax.org/
 [Ucar lab]: https://www.jax.org/research-and-faculty/research-labs/the-ucar-lab
 [Google scholar]: https://scholar.google.fr/citations?user=zDjOYRUAAAAJ&hl=fr
 [My Bibliography]: https://www.ncbi.nlm.nih.gov/myncbi/1Li--NSWc6YQS/bibliography/public/
 
+[Preprint: doi.org/10.1101/2025.06.24.661167]: https://www.biorxiv.org/content/10.1101/2025.06.24.661167v1
+[Preprint: www.biorxiv.org/content/10.1101/2025.07.28.667181v1]: https://www.biorxiv.org/content/10.1101/2025.07.28.667181v1
 [doi:10.1038/s41467-025-59411-z]: https://pubmed.ncbi.nlm.nih.gov/40379618/
 [doi:10.1038/s41588-025-02168-4]: https://www.nature.com/articles/s41588-025-02167-5
 [doi:10.1038/s41588-025-02167-5]: https://www.nature.com/articles/s41588-025-02168-4
