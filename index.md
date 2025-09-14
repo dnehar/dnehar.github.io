@@ -35,13 +35,11 @@ My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven
 21.  Pitoiset F, Vazquez T, Levacher B, **Nehar-Belaid D**, Vigneron J, Torrieri-Dramard L, Klatzmann D and Bellier B. _Retrovirus-based Virus-Like Particle Immunogenicity and its Modulation by Toll-Like Receptor Activation_. **Journal of Virology**. 2017 Oct 13;91(21). pii: e01230-17. [doi: 10.1128/JVI.01230-17]. PMID:28794025.<br/><br/>
 22.  Nordor AV, **Nehar-Belaid D**, Richon S, Klatzmann D, Bellet D, Fournier T, Dangles-Marie V and Aryee MJ. _The early pregnancy placenta foreshadows DNA methylation alterations of solid tumors_. **Epigenetics**. 2017 Sep;12(9):793-803. [doi: 10.1080/15592294.2017.1342912]. PMID:28678605. <br/><br/>
 23.  Courau T, **Nehar-Belaid D**, Florez LM, Levacher B, Vazquez T, Brimaud F, Bellier B and Klatzmann D. _TGFβ and VEGF cooperatively control the immunotolerant tumor environment and the efficacy of cancer immunotherapies_. **The Journal of Clinical Investigation Insights**. 2016;1(9):e85974. [doi: 10.1172/jci.insight. 85974]. PMID:27699271. <br/><br/>
-24.  **Nehar-Belaid D**, Courau T, Dérian N, Florez ML, Ruocco MG and Klatzmann D. _Regulatory T cells similarly orchestrate tolerance to fetuses and tumors_. **The Journal of Immunology**. January 15, 2016, 196 (2) 678- 690; [doi:10.4049/jimmunol.1501834]. PMID:26643476. <br/><br/>
+24.  **Nehar-Belaid D**, Courau T, Dérian N, Florez ML, Ruocco MG and Klatzmann D. _Regulatory T cells similarly orchestrate tolerance to fetuses and tumors_. **The Journal of Immunology**. January 15, 2016, 196 (2) 678- 690; [doi:10.4049/jimmunol.1501834]. PMID:26643476. <br/>
 
-### Under Review Manuscripts: 
+### Under review/revison manuscripts: 
 1.  **Nehar-Belaid D**<sup>$</sup>, Thibodeau A, Eroglu A, Marches R, Eryilmaz G, Unutmaz D, Mejias A, Pascual V, Kuchel G<sup>#</sup>, Ramilo O<sup>#</sup>, Banchereau J<sup>#</sup>, Ucar D<sup>#,$</sup>. _Single-cell map of the human immune system across the lifespan reveals infant-specific immune signatures_.  [Preprint: www.biorxiv.org/content/10.1101/2025.07.28.667181v1]. PMID:40766403.  <sup>$</sup>corresponding authors. <br/> <br/>
-
 2.	Thibodeau A<sup>#</sup> , Mejias A<sup>#</sup> , **Nehar-Belaid D**, Marches R, [4 others], Pascual V, Banchereau J<sup> #</sup>, Ramilo O<sup>#</sup>, Ucar D<sup>#</sup>. _Infants display reduced NK cell responses in RSV and increased inflammatory responses in SARS-CoV-2 infections_. [Preprint: doi.org/10.21203/rs.3.rs-5640872/v1]. PMID: 39877087. <br/> <br/>
-
 3.  Grabauskas T, Verschoor C.P, Trinity L, Marches R, Thibodeau A, **Nehar-Belaid D**, Eryilmaz G, Picard E, Kuo C-L, Schmader K.E,  Colon-Emeric C, Whitson H.E, Paust S, García-Sastre A, Banchereau J, Kuchel G.A, Ucar D. _CMV reshapes lymphoid immunity in aging: a single-cell atlas with predictive modeling_. [Preprint: doi.org/10.1101/2025.06.24.661167]. PMID: 40666903.  <br/> <br/>
 
 [Verhaak lab]: https://verhaaklab.com/
