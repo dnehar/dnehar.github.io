@@ -7,6 +7,7 @@ title: "About Me"
 
 Over the past 14 years, I have gained multi-disciplinary training in cancer immunology, autoimmunity, immune aging, early life immunity, and computational biology. My current research employs systems immunology approaches to investigate immune remodeling across the human lifespan.
 
+---
 
 ### Experience
 
@@ -19,6 +20,8 @@ Over the past 14 years, I have gained multi-disciplinary training in cancer immu
 **Sorbonne University (Pierre & Marie Curie)** - Paris, France
 
 - PhD Candidate: 2010 – 2016 ([Klatzmann lab])
+
+---
 
 ### Research Highlights
 
