@@ -14,7 +14,7 @@ My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven
 ## Published Papers
 
 - [Google scholar]
-- [My Bibliography] (in chronological order)
+- [My Bibliography] (in reverse chronological order)
 
 <sup>#</sup> denotes equal contribution
 
