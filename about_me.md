@@ -10,15 +10,15 @@ Over the past 14 years, I have gained multi-disciplinary training in cancer immu
 
 ### Experience
 
-**The Jackson Laboratory for Genomic Medicine** | Farmington, CT, USA
+**The Jackson Laboratory for Genomic Medicine** - Farmington, CT, USA
 
 - Research Scientist: 2023 – present ([Ucar lab])
 - Associate Research Scientist: 2019 – 2023 (Banchereau lab, then Verhaak lab)
 - Postdoctoral Associate: 2016 – 2019 (Banchereau lab)
 
-**Sorbonne University (Pierre & Marie Curie)** | Paris, France
+**Sorbonne University (Pierre & Marie Curie)** - Paris, France
 
-- PhD Candidate | 2010 – 2016 ([Klatzmann lab])
+- PhD Candidate: 2010 – 2016 ([Klatzmann lab])
 
 ### Research Highlights
 
