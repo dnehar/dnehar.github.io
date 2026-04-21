@@ -69,7 +69,7 @@ My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven
 
 ### Under review/revision manuscripts:
 
-1. **Nehar-Belaid D**<sup>$</sup>, Thibodeau A, Eroglu A, Marches R, Eryilmaz G, Unutmaz D, Mejias A, Pascual V, Kuchel G<sup>#</sup>, Ramilo O<sup>#</sup>, Banchereau J<sup>#</sup>, Ucar D<sup>#,$</sup>. _Single-cell map of the human immune system across the lifespan reveals infant-specific immune signatures_.  [Preprint: www.biorxiv.org/content/10.1101/2025.07.28.667181v1]. PMID:40766403.  <sup>$</sup>corresponding authors.
+1. **Nehar-Belaid D**<sup>$</sup>, Thibodeau A, Eroglu A, Marches R, Eryilmaz G, Unutmaz D, Mejias A, Pascual V, Kuchel G<sup>#</sup>, Ramilo O<sup>#</sup>, Banchereau J<sup>#</sup>, Ucar D<sup>#,$</sup>. _Single-cell map of the human immune system across the lifespan reveals infant-specific immune signatures_.  [Preprint: www.biorxiv.org/content/10.1101/2025.07.28.667181v1]. PMID:40766403. in press. <sup>$</sup>corresponding authors.
 
 2. Grabauskas T, Trinity L, Verschoor C.P,  **Nehar-Belaid D**, Marches R, Eryilmaz G, Mahajan A, Baarathi S, Thibodeau A,  Picard E, Kuo C-L, Schmader K.E,  Colon-Emeric C, Whitson H.E, Paust S, García-Sastre A, Yaari G, Banchereau J, Kuchel G.A, Ucar D. _CMV-specific clonal expansion of Th1, GZMK⁺ CD8⁺, and TEMRA T cells revealed by human PBMC single cell profiling_.  [Preprint: doi.org/10.1101/2025.06.24.661167]. PMID: 40666903.
 
