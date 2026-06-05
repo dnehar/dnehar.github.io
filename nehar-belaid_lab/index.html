@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nehar-Belaid Lab | Systems Immunology</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0B1F3A;
+  --navy-mid: #162C4F;
+  --teal: #0D9E8A;
+  --teal-light: #1BBFA8;
+  --teal-pale: #E0F5F2;
+  --amber: #E8A234;
+  --white: #FAFCFC;
+  --gray-100: #F4F7F7;
+  --gray-300: #C8D4D4;
+  --gray-500: #7A9090;
+  --gray-700: #3D5252;
+  --text: #0F2233;
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--white);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ── NAV ─────────────────────────────────────────── */
+nav {
+  position: fixed; top: 0; width: 100%; z-index: 100;
+  background: rgba(11,31,58,0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.nav-inner {
+  max-width: 1200px; margin: 0 auto;
+  padding: 0 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+}
+.nav-brand {
+  display: flex; align-items: center; gap: 10px;
+  text-decoration: none;
+}
+.nav-logo {
+  width: 36px; height: 36px;
+}
+.nav-name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--white);
+  letter-spacing: 0.01em;
+}
+.nav-links {
+  display: flex; gap: 2rem; list-style: none;
+}
+.nav-links a {
+  color: rgba(255,255,255,0.72);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--teal-light); }
+
+/* ── HERO ────────────────────────────────────────── */
+#home {
+  min-height: 100vh;
+  background: var(--navy);
+  position: relative;
+  display: flex; align-items: center;
+  overflow: hidden;
+}
+
+/* Animated network SVG canvas */
+#network-canvas {
+  position: absolute; inset: 0;
+  opacity: 0.18;
+}
+
+.hero-content {
+  position: relative; z-index: 2;
+  max-width: 1200px; margin: 0 auto;
+  padding: 8rem 2rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.hero-text {}
+.hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--teal-light);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  display: flex; align-items: center; gap: 10px;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 28px; height: 1px;
+  background: var(--teal-light);
+}
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  color: var(--white);
+  line-height: 1.12;
+  margin-bottom: 1.5rem;
+}
+.hero-title em {
+  font-style: italic;
+  color: var(--teal-light);
+}
+.hero-sub {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.62);
+  line-height: 1.75;
+  max-width: 480px;
+  margin-bottom: 2.5rem;
+}
+.hero-affil {
+  display: flex; align-items: center; gap: 12px;
+  color: rgba(255,255,255,0.45);
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+.hero-affil span { color: rgba(255,255,255,0.25); }
+.hero-ctas {
+  display: flex; gap: 1rem; flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+.btn-primary {
+  background: var(--teal);
+  color: white;
+  padding: 0.75rem 1.75rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-primary:hover { background: var(--teal-light); transform: translateY(-1px); }
+.btn-outline {
+  border: 1px solid rgba(255,255,255,0.25);
+  color: rgba(255,255,255,0.8);
+  padding: 0.75rem 1.75rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  transition: border-color 0.2s, color 0.2s;
+}
+.btn-outline:hover { border-color: var(--teal-light); color: var(--teal-light); }
+
+/* Hero stats */
+.hero-stats {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 0;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.04);
+}
+.stat {
+  padding: 1.25rem 1rem;
+  border-right: 1px solid rgba(255,255,255,0.08);
+  text-align: center;
+}
+.stat:last-child { border-right: none; }
+.stat-val {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  color: var(--teal-light);
+  display: block;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.stat-lbl {
+  font-size: 0.74rem;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Hero visual (mini network) */
+.hero-visual {
+  display: flex; justify-content: center; align-items: center;
+}
+#mini-network {
+  width: 100%; max-width: 420px;
+  aspect-ratio: 1;
+}
+
+/* ── SECTION SHARED ──────────────────────────────── */
+section { padding: 6rem 2rem; }
+.section-inner { max-width: 1200px; margin: 0 auto; }
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--teal);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  display: flex; align-items: center; gap: 8px;
+}
+.section-label::before {
+  content: '';
+  display: block;
+  width: 20px; height: 1px;
+  background: var(--teal);
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  color: var(--navy);
+  margin-bottom: 1rem;
+  line-height: 1.18;
+}
+.section-intro {
+  font-size: 1.05rem;
+  color: var(--gray-700);
+  max-width: 680px;
+  line-height: 1.75;
+  margin-bottom: 3.5rem;
+}
+
+/* ── RESEARCH ────────────────────────────────────── */
+#research { background: var(--white); }
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.research-card {
+  background: var(--gray-100);
+  border: 1px solid var(--gray-300);
+  border-radius: 10px;
+  padding: 2rem;
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.research-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal), var(--teal-light));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+.research-card:hover {
+  box-shadow: 0 8px 32px rgba(11,31,58,0.1);
+  transform: translateY(-3px);
+  border-color: var(--teal);
+}
+.research-card:hover::before { transform: scaleX(1); }
+.card-icon {
+  width: 48px; height: 48px;
+  background: var(--teal-pale);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1.25rem;
+  font-size: 1.4rem;
+}
+.card-title {
+  font-family: var(--font-display);
+  font-size: 1.18rem;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+}
+.card-body {
+  font-size: 0.9rem;
+  color: var(--gray-700);
+  line-height: 1.7;
+}
+.card-tags {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  margin-top: 1.25rem;
+}
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--teal);
+  background: var(--teal-pale);
+  padding: 3px 8px;
+  border-radius: 3px;
+  letter-spacing: 0.04em;
+}
+
+/* ── TEAM ────────────────────────────────────────── */
+#team { background: var(--navy); }
+#team .section-title { color: var(--white); }
+#team .section-intro { color: rgba(255,255,255,0.55); }
+#team .section-label { color: var(--teal-light); }
+#team .section-label::before { background: var(--teal-light); }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.team-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+  transition: background 0.2s, border-color 0.2s;
+}
+.team-card:hover {
+  background: rgba(13,158,138,0.1);
+  border-color: rgba(13,158,138,0.3);
+}
+.team-avatar {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--teal) 0%, var(--navy-mid) 100%);
+  margin: 0 auto 1rem;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: white;
+  border: 2px solid rgba(255,255,255,0.1);
+}
+.team-name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+.team-role {
+  font-size: 0.8rem;
+  color: var(--teal-light);
+  margin-bottom: 8px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+.team-focus {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+  line-height: 1.5;
+}
+.team-pi {
+  grid-column: 1 / -1;
+  display: flex; align-items: center; gap: 2rem;
+  text-align: left;
+  padding: 2rem;
+  background: rgba(13,158,138,0.08);
+  border: 1px solid rgba(13,158,138,0.2);
+  margin-bottom: 0.5rem;
+}
+.team-pi .team-avatar {
+  width: 100px; height: 100px; font-size: 1.8rem;
+  flex-shrink: 0; margin: 0;
+  background: linear-gradient(135deg, var(--teal) 0%, #0B5E54 100%);
+  border: 2px solid var(--teal);
+}
+.team-pi .team-name { font-size: 1.4rem; }
+.pi-bio {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.65;
+  margin-top: 6px;
+  max-width: 700px;
+}
+.pi-links { display: flex; gap: 12px; margin-top: 12px; }
+.pi-link {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--teal-light);
+  text-decoration: none;
+  border: 1px solid rgba(13,158,138,0.35);
+  padding: 4px 10px;
+  border-radius: 3px;
+  transition: background 0.2s;
+}
+.pi-link:hover { background: rgba(13,158,138,0.15); }
+
+/* ── PUBLICATIONS ────────────────────────────────── */
+#publications { background: var(--gray-100); }
+.pub-list { display: flex; flex-direction: column; gap: 1rem; }
+.pub-item {
+  background: var(--white);
+  border: 1px solid var(--gray-300);
+  border-radius: 8px;
+  padding: 1.5rem 1.75rem;
+  display: flex; gap: 1.5rem;
+  align-items: flex-start;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.pub-item:hover {
+  box-shadow: 0 4px 20px rgba(11,31,58,0.08);
+  border-color: var(--teal);
+}
+.pub-year {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--teal);
+  font-weight: 500;
+  min-width: 44px;
+  padding-top: 2px;
+}
+.pub-content {}
+.pub-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--navy);
+  margin-bottom: 4px;
+  line-height: 1.35;
+}
+.pub-authors {
+  font-size: 0.82rem;
+  color: var(--gray-500);
+  margin-bottom: 4px;
+}
+.pub-authors strong { color: var(--teal); }
+.pub-journal {
+  font-size: 0.82rem;
+  color: var(--gray-700);
+  font-style: italic;
+}
+.pub-badge {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  padding: 2px 7px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-left: 8px;
+  font-style: normal;
+}
+.badge-ni { background: #EBF3FB; color: #1B6FAA; }
+.badge-nc { background: #E8F7F5; color: #0A7A68; }
+.badge-lancet { background: #FEF3E2; color: #9A5C00; }
+
+/* ── JOIN US ─────────────────────────────────────── */
+#joinus { background: var(--white); }
+.positions-grid {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.position-card {
+  border: 1px solid var(--gray-300);
+  border-radius: 10px;
+  padding: 1.75rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.position-card:hover {
+  border-color: var(--teal);
+  box-shadow: 0 4px 20px rgba(11,31,58,0.08);
+}
+.position-role {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+.position-status {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.04em;
+}
+.status-open { background: #E0F5F2; color: #0A7A68; }
+.status-future { background: #FFF3E0; color: #9A5C00; }
+.position-desc { font-size: 0.875rem; color: var(--gray-700); line-height: 1.65; }
+.join-quote {
+  background: var(--navy);
+  border-radius: 12px;
+  padding: 2.5rem 3rem;
+  display: flex; align-items: center; gap: 2rem;
+}
+.join-quote-text {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  color: var(--white);
+  line-height: 1.4;
+  font-style: italic;
+  flex: 1;
+}
+.join-quote-text em { color: var(--teal-light); font-style: normal; }
+.join-cta { flex-shrink: 0; }
+
+/* ── CONTACT ─────────────────────────────────────── */
+#contact { background: var(--navy); }
+#contact .section-title { color: var(--white); }
+#contact .section-label { color: var(--teal-light); }
+#contact .section-label::before { background: var(--teal-light); }
+
+.contact-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
+  align-items: start;
+}
+.contact-info {}
+.contact-intro {
+  color: rgba(255,255,255,0.55);
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+.contact-item {
+  display: flex; align-items: flex-start; gap: 14px;
+  margin-bottom: 1.25rem;
+}
+.contact-icon {
+  width: 36px; height: 36px; flex-shrink: 0;
+  background: rgba(13,158,138,0.12);
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+}
+.contact-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--teal-light);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.contact-val {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.9rem;
+}
+.contact-val a { color: rgba(255,255,255,0.8); text-decoration: none; }
+.contact-val a:hover { color: var(--teal-light); }
+
+/* Contact form */
+.contact-form {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 2rem;
+}
+.form-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form-group { margin-bottom: 1rem; }
+.form-group label {
+  display: block;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  font-family: var(--font-mono);
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 5px;
+  padding: 0.65rem 0.9rem;
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus { border-color: var(--teal); }
+.form-group textarea { resize: vertical; min-height: 110px; }
+.form-group select option { background: var(--navy-mid); }
+.btn-submit {
+  width: 100%;
+  background: var(--teal);
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  letter-spacing: 0.03em;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+.btn-submit:hover { background: var(--teal-light); }
+
+/* ── FOOTER ──────────────────────────────────────── */
+footer {
+  background: #081629;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.footer-text {
+  color: rgba(255,255,255,0.25);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+.footer-text a { color: rgba(255,255,255,0.35); text-decoration: none; }
+.footer-text a:hover { color: var(--teal-light); }
+
+/* ── DIVIDER ─────────────────────────────────────── */
+.teal-bar {
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal), var(--teal-light), var(--amber));
+}
+
+/* ── ANIMATIONS ──────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp 0.7s ease both; }
+.fade-up-d1 { animation-delay: 0.1s; }
+.fade-up-d2 { animation-delay: 0.2s; }
+.fade-up-d3 { animation-delay: 0.3s; }
+.fade-up-d4 { animation-delay: 0.45s; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#home" class="nav-brand">
+      <svg class="nav-logo" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="18" cy="18" r="3.5" fill="#1BBFA8"/>
+        <circle cx="6" cy="10" r="2.5" fill="#0D9E8A" opacity="0.8"/>
+        <circle cx="30" cy="10" r="2.5" fill="#0D9E8A" opacity="0.8"/>
+        <circle cx="6" cy="26" r="2.5" fill="#0D9E8A" opacity="0.6"/>
+        <circle cx="30" cy="26" r="2.5" fill="#0D9E8A" opacity="0.6"/>
+        <circle cx="18" cy="4" r="2" fill="#0D9E8A" opacity="0.5"/>
+        <circle cx="18" cy="32" r="2" fill="#0D9E8A" opacity="0.5"/>
+        <line x1="18" y1="14.5" x2="8" y2="11.5" stroke="#1BBFA8" stroke-width="0.8" opacity="0.6"/>
+        <line x1="18" y1="14.5" x2="28" y2="11.5" stroke="#1BBFA8" stroke-width="0.8" opacity="0.6"/>
+        <line x1="18" y1="21.5" x2="8" y2="24.5" stroke="#1BBFA8" stroke-width="0.8" opacity="0.6"/>
+        <line x1="18" y1="21.5" x2="28" y2="24.5" stroke="#1BBFA8" stroke-width="0.8" opacity="0.6"/>
+        <line x1="18" y1="14.5" x2="18" y2="6" stroke="#1BBFA8" stroke-width="0.8" opacity="0.4"/>
+        <line x1="18" y1="21.5" x2="18" y2="30" stroke="#1BBFA8" stroke-width="0.8" opacity="0.4"/>
+      </svg>
+      <span class="nav-name">Nehar-Belaid Lab</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#joinus">Join Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <canvas id="network-canvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-eyebrow fade-up">Systems Immunology · Emory University</div>
+      <h1 class="hero-title fade-up fade-up-d1">
+        Decoding immunity<br><em>across the lifespan</em>
+      </h1>
+      <p class="hero-sub fade-up fade-up-d2">
+        We use single-cell genomics, systems biology, and computational approaches to map how the human immune system is built, maintained, and disrupted — from infancy through extreme old age.
+      </p>
+      <div class="hero-ctas fade-up fade-up-d3">
+        <a href="#research" class="btn-primary">Our Research</a>
+        <a href="#joinus" class="btn-outline">Join the Lab</a>
+      </div>
+      <div class="hero-affil fade-up fade-up-d4">
+        Department of Pathology · PATRU <span>|</span> Emory University School of Medicine
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg id="mini-network" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Outer ring nodes -->
+        <circle cx="210" cy="50"  r="10" fill="#1BBFA8" opacity="0.9"/>
+        <circle cx="350" cy="120" r="8"  fill="#0D9E8A" opacity="0.7"/>
+        <circle cx="380" cy="260" r="10" fill="#1BBFA8" opacity="0.8"/>
+        <circle cx="300" cy="370" r="8"  fill="#0D9E8A" opacity="0.7"/>
+        <circle cx="120" cy="370" r="10" fill="#1BBFA8" opacity="0.9"/>
+        <circle cx="40"  cy="260" r="8"  fill="#0D9E8A" opacity="0.7"/>
+        <circle cx="70"  cy="120" r="8"  fill="#0D9E8A" opacity="0.6"/>
+        <!-- Inner ring nodes -->
+        <circle cx="210" cy="130" r="8" fill="#E8A234" opacity="0.85"/>
+        <circle cx="300" cy="180" r="7" fill="#1BBFA8" opacity="0.7"/>
+        <circle cx="310" cy="290" r="8" fill="#E8A234" opacity="0.7"/>
+        <circle cx="210" cy="330" r="7" fill="#1BBFA8" opacity="0.75"/>
+        <circle cx="115" cy="290" r="7" fill="#1BBFA8" opacity="0.7"/>
+        <circle cx="115" cy="180" r="7" fill="#E8A234" opacity="0.7"/>
+        <!-- Center -->
+        <circle cx="210" cy="210" r="18" fill="#1BBFA8" opacity="0.95"/>
+        <circle cx="210" cy="210" r="10" fill="white" opacity="0.3"/>
+        <!-- Edges outer to inner -->
+        <line x1="210" y1="50"  x2="210" y2="130" stroke="#1BBFA8" stroke-width="1.2" opacity="0.35"/>
+        <line x1="350" y1="120" x2="300" y2="180" stroke="#1BBFA8" stroke-width="1.2" opacity="0.35"/>
+        <line x1="380" y1="260" x2="310" y2="290" stroke="#1BBFA8" stroke-width="1.2" opacity="0.35"/>
+        <line x1="300" y1="370" x2="210" y2="330" stroke="#1BBFA8" stroke-width="1.2" opacity="0.35"/>
+        <line x1="120" y1="370" x2="210" y2="330" stroke="#1BBFA8" stroke-width="1.2" opacity="0.35"/>
+        <line x1="40"  y1="260" x2="115" y2="290" stroke="#1BBFA8" stroke-width="1.2" opacity="0.35"/>
+        <line x1="70"  y1="120" x2="115" y2="180" stroke="#1BBFA8" stroke-width="1.2" opacity="0.35"/>
+        <!-- Edges inner to center -->
+        <line x1="210" y1="130" x2="210" y2="192" stroke="#E8A234" stroke-width="1.5" opacity="0.5"/>
+        <line x1="300" y1="180" x2="228" y2="198" stroke="#1BBFA8" stroke-width="1.5" opacity="0.5"/>
+        <line x1="310" y1="290" x2="228" y2="222" stroke="#E8A234" stroke-width="1.5" opacity="0.5"/>
+        <line x1="210" y1="330" x2="210" y2="228" stroke="#1BBFA8" stroke-width="1.5" opacity="0.5"/>
+        <line x1="115" y1="290" x2="192" y2="222" stroke="#1BBFA8" stroke-width="1.5" opacity="0.5"/>
+        <line x1="115" y1="180" x2="192" y2="198" stroke="#E8A234" stroke-width="1.5" opacity="0.5"/>
+        <!-- Cross edges inner -->
+        <line x1="210" y1="130" x2="300" y2="180" stroke="#1BBFA8" stroke-width="0.8" opacity="0.2"/>
+        <line x1="300" y1="180" x2="310" y2="290" stroke="#1BBFA8" stroke-width="0.8" opacity="0.2"/>
+        <line x1="310" y1="290" x2="210" y2="330" stroke="#1BBFA8" stroke-width="0.8" opacity="0.2"/>
+        <line x1="210" y1="330" x2="115" y2="290" stroke="#1BBFA8" stroke-width="0.8" opacity="0.2"/>
+        <line x1="115" y1="290" x2="115" y2="180" stroke="#1BBFA8" stroke-width="0.8" opacity="0.2"/>
+        <line x1="115" y1="180" x2="210" y2="130" stroke="#1BBFA8" stroke-width="0.8" opacity="0.2"/>
+        <!-- Labels -->
+        <text x="210" y="28"  text-anchor="middle" fill="#1BBFA8" font-size="9" font-family="JetBrains Mono, monospace" opacity="0.7">Infants</text>
+        <text x="375" y="108" text-anchor="start"  fill="#1BBFA8" font-size="9" font-family="JetBrains Mono, monospace" opacity="0.7">CD8 T</text>
+        <text x="392" y="265" text-anchor="start"  fill="#1BBFA8" font-size="9" font-family="JetBrains Mono, monospace" opacity="0.7">NK</text>
+        <text x="305" y="390" text-anchor="middle" fill="#1BBFA8" font-size="9" font-family="JetBrains Mono, monospace" opacity="0.7">Aging</text>
+        <text x="115" y="392" text-anchor="middle" fill="#1BBFA8" font-size="9" font-family="JetBrains Mono, monospace" opacity="0.7">B cells</text>
+        <text x="15"  y="265" text-anchor="start"  fill="#1BBFA8" font-size="9" font-family="JetBrains Mono, monospace" opacity="0.7">DC</text>
+        <text x="12"  y="118" text-anchor="start"  fill="#1BBFA8" font-size="9" font-family="JetBrains Mono, monospace" opacity="0.7">pDC</text>
+        <text x="210" y="215" text-anchor="middle" fill="white"   font-size="10" font-family="DM Serif Display, serif" opacity="0.9">scRNA</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="teal-bar"></div>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="section-inner">
+    <div class="section-label">Research Focus</div>
+    <h2 class="section-title">Mapping immunity at single-cell resolution</h2>
+    <p class="section-intro">
+      Our lab integrates single-cell transcriptomics, epigenomics, and systems-level computational analysis to understand how immune cell identities, states, and networks change across human development, aging, and disease.
+    </p>
+    <div class="research-grid">
+      <div class="research-card">
+        <div class="card-icon">🧬</div>
+        <div class="card-title">Immune aging & longevity</div>
+        <p class="card-body">We characterize how immune cell composition and function change from infancy through extreme old age, identifying cellular hallmarks of healthy aging versus immunosenescence and inflammaging.</p>
+        <div class="card-tags">
+          <span class="tag">scRNA-seq</span>
+          <span class="tag">aging</span>
+          <span class="tag">TEMRA</span>
+          <span class="tag">GZMK+ T cells</span>
+        </div>
+      </div>
+      <div class="research-card">
+        <div class="card-icon">🍼</div>
+        <div class="card-title">Infant immune development</div>
+        <p class="card-body">Infancy is the most immunologically dynamic period of life. We study unique infant immune features — including SOX4⁺ naïve T cells, constitutive ISG expression, and pDC predominance — to understand early-life immune programming.</p>
+        <div class="card-tags">
+          <span class="tag">SOX4+ T cells</span>
+          <span class="tag">pDC</span>
+          <span class="tag">ISG</span>
+          <span class="tag">Th2 bias</span>
+        </div>
+      </div>
+      <div class="research-card">
+        <div class="card-icon">⚙️</div>
+        <div class="card-title">Systems immunology</div>
+        <p class="card-body">We build computational models and multi-omic atlases to dissect immune cell networks, transcription factor landscapes, and chromatin accessibility states across health and autoimmune disease.</p>
+        <div class="card-tags">
+          <span class="tag">snATAC-seq</span>
+          <span class="tag">ChromVAR</span>
+          <span class="tag">GSEA</span>
+          <span class="tag">multi-omics</span>
+        </div>
+      </div>
+      <div class="research-card">
+        <div class="card-icon">🔬</div>
+        <div class="card-title">Autoimmune disease</div>
+        <p class="card-body">We use single-cell approaches to map disease heterogeneity in lupus (SLE) and other autoimmune conditions, identifying cell subsets and transcriptional programs that drive pathology.</p>
+        <div class="card-tags">
+          <span class="tag">SLE</span>
+          <span class="tag">interferon</span>
+          <span class="tag">plasma cells</span>
+          <span class="tag">disease activity</span>
+        </div>
+      </div>
+      <div class="research-card">
+        <div class="card-icon">💉</div>
+        <div class="card-title">Vaccine immunology</div>
+        <p class="card-body">We study baseline immune states that predict vaccine responsiveness across age groups, with the goal of designing age-appropriate immunization strategies for infants, older adults, and immunocompromised individuals.</p>
+        <div class="card-tags">
+          <span class="tag">vaccine response</span>
+          <span class="tag">baseline immunity</span>
+          <span class="tag">older adults</span>
+        </div>
+      </div>
+      <div class="research-card">
+        <div class="card-icon">🧠</div>
+        <div class="card-title">Computational tools & atlases</div>
+        <p class="card-body">We develop open-access immune cell atlases and bioinformatics tools, including interactive Shiny apps and pipelines for single-cell data integration, cell type annotation, and CMV inference.</p>
+        <div class="card-tags">
+          <span class="tag">CellTypist</span>
+          <span class="tag">Harmony</span>
+          <span class="tag">Shiny</span>
+          <span class="tag">open-access</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team">
+  <div class="section-inner">
+    <div class="section-label">Our Team</div>
+    <h2 class="section-title">The people behind the science</h2>
+    <p class="section-intro">
+      We are a diverse, collaborative team of immunologists and computational biologists at Emory University. We are currently building the lab and recruiting at all levels.
+    </p>
+    <div class="team-grid">
+      <!-- PI card full width -->
+      <div class="team-card team-pi">
+        <div class="team-avatar">DN</div>
+        <div>
+          <div class="team-name">Djamel Nehar-Belaid, PhD</div>
+          <div class="team-role">Principal Investigator</div>
+          <div class="pi-bio">
+            Dr. Nehar-Belaid is an expert in systems immunology and single-cell genomics. His work spans immune aging, early-life immunity, autoimmune disease, and vaccine biology. He trained in Dr. Duygu Ucar and Dr. Jacques Banchereau's labs at The Jackson Laboratory before establishing his independent lab in the Department of Pathology (PATRU) at Emory University in September 2026.
+          </div>
+          <div class="pi-links">
+            <a href="mailto:nehard@jax.org" class="pi-link">✉ nehard@jax.org</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/?term=nehar-belaid" target="_blank" class="pi-link">PubMed</a>
+            <a href="#" class="pi-link">Google Scholar</a>
+            <a href="#" class="pi-link">Twitter / X</a>
+          </div>
+        </div>
+      </div>
+      <!-- Placeholder team members -->
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#E8A234,#9A5C00)">?</div>
+        <div class="team-name">Postdoctoral Fellow</div>
+        <div class="team-role">Position Open</div>
+        <div class="team-focus">Single-cell genomics · immune aging</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#E8A234,#9A5C00)">?</div>
+        <div class="team-name">PhD Student</div>
+        <div class="team-role">Position Open</div>
+        <div class="team-focus">Computational immunology · disease modeling</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#E8A234,#9A5C00)">?</div>
+        <div class="team-name">Research Scientist</div>
+        <div class="team-role">Position Open</div>
+        <div class="team-focus">Experimental immunology · multi-omics</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+  <div class="section-inner">
+    <div class="section-label">Selected Publications</div>
+    <h2 class="section-title">Recent work from the lab</h2>
+    <p class="section-intro">
+      Selected publications from the PI and collaborators. Full list available on <a href="https://pubmed.ncbi.nlm.nih.gov/?term=nehar-belaid" target="_blank" style="color:var(--teal)">PubMed</a> and Google Scholar.
+    </p>
+    <div class="pub-list">
+
+      <div class="pub-item">
+        <div class="pub-year">2026</div>
+        <div class="pub-content">
+          <div class="pub-title">Single-cell map of the healthy human immune system across the lifespan reveals unique infant immune signatures</div>
+          <div class="pub-authors"><strong>Nehar-Belaid D</strong>, Thibodeau A, Eroglu A, Marches R, et al.</div>
+          <div class="pub-journal">Nature Communications <span class="pub-badge badge-nc">Nat Commun</span></div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
+        <div class="pub-content">
+          <div class="pub-title">SARS-CoV-2 induced immune perturbations in infants vary with disease severity and differ from adults' responses</div>
+          <div class="pub-authors"><strong>Nehar-Belaid D</strong>, et al.</div>
+          <div class="pub-journal">Nature Communications <span class="pub-badge badge-nc">Nat Commun</span></div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2024</div>
+        <div class="pub-content">
+          <div class="pub-title">Abatacept in individuals at high risk of rheumatoid arthritis (APIPPRA): a randomised, double-blind, multicentre phase 2b clinical trial</div>
+          <div class="pub-authors">Cope AP, Jasenecova M, […] Pascual V, Banchereau JF</div>
+          <div class="pub-journal">The Lancet <span class="pub-badge badge-lancet">Lancet</span></div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2023</div>
+        <div class="pub-content">
+          <div class="pub-title">Baseline immune states (BIS) associated with vaccine responsiveness and factors that shape the BIS</div>
+          <div class="pub-authors"><strong>Nehar-Belaid D</strong>, et al.</div>
+          <div class="pub-journal">Seminars in Immunology</div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2020</div>
+        <div class="pub-content">
+          <div class="pub-title">Mapping systemic lupus erythematosus heterogeneity at the single-cell level</div>
+          <div class="pub-authors"><strong>Nehar-Belaid D</strong>, Hong S, Marches R, Chen G, et al.</div>
+          <div class="pub-journal">Nature Immunology <span class="pub-badge badge-ni">Nat Immunol</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- JOIN US -->
+<section id="joinus">
+  <div class="section-inner">
+    <div class="section-label">Join Us</div>
+    <h2 class="section-title">We are recruiting</h2>
+    <p class="section-intro">
+      We are actively building the lab and looking for passionate scientists at all levels who are excited about understanding how the immune system works across the human lifespan.
+    </p>
+    <div class="positions-grid">
+      <div class="position-card">
+        <div class="position-role">Postdoctoral Fellow</div>
+        <span class="position-status status-open">● Open now</span>
+        <p class="position-desc">We seek a postdoc with experience in single-cell genomics, computational biology, or experimental immunology. Strong candidates will have a PhD and a track record of first-author publications. Interest in aging, early-life immunity, or autoimmune disease is a plus.</p>
+      </div>
+      <div class="position-card">
+        <div class="position-role">PhD Student</div>
+        <span class="position-status status-open">● Open now</span>
+        <p class="position-desc">We welcome PhD students through Emory's graduate programs with interests in systems immunology, computational biology, or immunopathology. Please reach out before applying to discuss rotation projects.</p>
+      </div>
+      <div class="position-card">
+        <div class="position-role">Research Scientist / Lab Manager</div>
+        <span class="position-status status-open">● Open now</span>
+        <p class="position-desc">We are looking for an experienced research scientist or lab manager to help establish our experimental platforms, manage day-to-day lab operations, and contribute to ongoing projects in immune profiling.</p>
+      </div>
+    </div>
+    <div class="join-quote">
+      <div class="join-quote-text">
+        "We believe that <em>diversity of thought and background</em> drives discovery. We are committed to building an inclusive, collaborative, and intellectually rigorous lab environment."
+      </div>
+      <div class="join-cta">
+        <a href="#contact" class="btn-primary">Get in touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-label">Contact</div>
+    <h2 class="section-title">Get in touch</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="contact-intro">
+          Whether you're interested in joining the lab, discussing a collaboration, or just want to learn more about our work — we'd love to hear from you.
+        </p>
+        <div class="contact-item">
+          <div class="contact-icon">✉</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-val"><a href="mailto:nehard@jax.org">nehard@jax.org</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🏛</div>
+          <div>
+            <div class="contact-label">Department</div>
+            <div class="contact-val">Department of Pathology · PATRU<br>Emory University School of Medicine<br>Atlanta, Georgia</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🗺</div>
+          <div>
+            <div class="contact-label">Location</div>
+            <div class="contact-val">Emory University<br>Atlanta, GA 30322</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📄</div>
+          <div>
+            <div class="contact-label">Publications</div>
+            <div class="contact-val">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=nehar-belaid" target="_blank">PubMed</a> ·
+              <a href="#" style="color:rgba(255,255,255,0.8)">Google Scholar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <div class="form-title">Send a message</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First name</label>
+            <input type="text" placeholder="Jane">
+          </div>
+          <div class="form-group">
+            <label>Last name</label>
+            <input type="text" placeholder="Doe">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="jane.doe@university.edu">
+        </div>
+        <div class="form-group">
+          <label>Reason for contact</label>
+          <select>
+            <option value="">Select one...</option>
+            <option>Postdoc position inquiry</option>
+            <option>PhD rotation inquiry</option>
+            <option>Research collaboration</option>
+            <option>General question</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell us about yourself and your interests..."></textarea>
+        </div>
+        <button class="btn-submit">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="teal-bar"></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <p class="footer-text">
+      © 2026 Nehar-Belaid Lab · Department of Pathology, PATRU · Emory University School of Medicine<br>
+      <a href="mailto:nehard@jax.org">nehard@jax.org</a> · Atlanta, GA
+    </p>
+  </div>
+</footer>
+
+<!-- Animated background network -->
+<script>
+const canvas = document.getElementById('network-canvas');
+const ctx = canvas.getContext('2d');
+let nodes = [], width, height;
+
+function resize() {
+  width = canvas.width = window.innerWidth;
+  height = canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener('resize', resize);
+
+// Generate nodes
+for (let i = 0; i < 55; i++) {
+  nodes.push({
+    x: Math.random() * window.innerWidth,
+    y: Math.random() * window.innerHeight,
+    vx: (Math.random() - 0.5) * 0.35,
+    vy: (Math.random() - 0.5) * 0.35,
+    r: Math.random() * 3 + 1.5
+  });
+}
+
+function draw() {
+  ctx.clearRect(0, 0, width, height);
+  // Draw edges
+  for (let i = 0; i < nodes.length; i++) {
+    for (let j = i + 1; j < nodes.length; j++) {
+      const dx = nodes[i].x - nodes[j].x;
+      const dy = nodes[i].y - nodes[j].y;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      if (dist < 130) {
+        ctx.beginPath();
+        ctx.strokeStyle = `rgba(27,191,168,${(1 - dist/130) * 0.5})`;
+        ctx.lineWidth = 0.7;
+        ctx.moveTo(nodes[i].x, nodes[i].y);
+        ctx.lineTo(nodes[j].x, nodes[j].y);
+        ctx.stroke();
+      }
+    }
+  }
+  // Draw nodes
+  nodes.forEach(n => {
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(27,191,168,0.7)';
+    ctx.fill();
+  });
+  // Update positions
+  nodes.forEach(n => {
+    n.x += n.vx; n.y += n.vy;
+    if (n.x < 0 || n.x > width)  n.vx *= -1;
+    if (n.y < 0 || n.y > height) n.vy *= -1;
+  });
+  requestAnimationFrame(draw);
+}
+draw();
+</script>
+
+</body>
+</html>
