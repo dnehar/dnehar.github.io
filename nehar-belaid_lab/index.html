@@ -174,7 +174,8 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
   .research-grid { grid-template-columns: 1fr; }
   .team-grid { grid-template-columns: 1fr; }
   .team-pi { flex-direction: column; text-align: center; align-items: center; gap: 1.25rem; }
-  .team-pi .team-avatar { margin: 0 auto; }
+  .team-pi .team-avatar { margin: 0 auto; width: 120px !important; height: 120px !important; flex-shrink: 0; }
+  .team-pi .team-avatar img { width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: 50%; }
   .pi-bio { text-align: left; }
   .pi-links { flex-wrap: wrap; justify-content: center; }
   .pub-item { flex-direction: column; gap: 0.4rem; padding: 1rem 1.25rem; }
