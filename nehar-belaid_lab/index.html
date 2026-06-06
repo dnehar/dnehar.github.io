@@ -65,7 +65,7 @@ section { padding: 6rem 2rem; }
 .section-intro { font-size: 1.05rem; color: var(--gray-700); max-width: 680px; line-height: 1.75; margin-bottom: 3.5rem; }
 
 #research { background: var(--white); }
-.research-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.research-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
 .research-card { background: var(--gray-100); border: 1px solid var(--gray-300); border-radius: 10px; padding: 2rem; transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s; position: relative; overflow: hidden; }
 .research-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--teal), var(--teal-light)); transform: scaleX(0); transform-origin: left; transition: transform 0.3s; }
 .research-card:hover { box-shadow: 0 8px 32px rgba(11,31,58,0.1); transform: translateY(-3px); border-color: var(--teal); }
@@ -292,15 +292,21 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
     <div class="research-grid">
       <div class="research-card">
         <div class="card-icon">🍼</div>
-        <div class="card-title">Early life Immunity </div>
+        <div class="card-title">Infant immune development</div>
         <p class="card-body">Infancy is the most immunologically dynamic period of life. We study unique infant immune features — including SOX4⁺ naïve T cells, constitutive ISG expression, and pDC predominance — to understand early-life immune programming.</p>
         <div class="card-tags"><span class="tag">SOX4+ T cells</span><span class="tag">pDC</span><span class="tag">ISG</span><span class="tag">Th2 bias</span></div>
       </div>
       <div class="research-card">
         <div class="card-icon">🧬</div>
         <div class="card-title">SOX4⁺ T cell biology</div>
-        <p class="card-body">We investigate the function, and epigenetic landscape of SOX4⁺ naïve T cells — a population enriched in infants that carries stemness signatures, thymic emigrant features, and a Th2 differentiation bias.</p>
+        <p class="card-body">We investigate the abundance, function, and epigenetic landscape of SOX4⁺ naïve T cells — a population enriched in infants that carries stemness signatures, thymic emigrant features, and a Th2 differentiation bias.</p>
         <div class="card-tags"><span class="tag">SOX4</span><span class="tag">naïve T cells</span><span class="tag">snATAC-seq</span><span class="tag">thymic emigrants</span></div>
+      </div>
+      <div class="research-card">
+        <div class="card-icon">⚡</div>
+        <div class="card-title">Constitutive interferon in infants</div>
+        <p class="card-body">Infant T cells constitutively express interferon-stimulated genes in the absence of acute infection — a pre-activated antiviral state that may compensate for the immaturity of the adaptive immune system and shape responses to pathogens like RSV and SARS-CoV-2.</p>
+        <div class="card-tags"><span class="tag">ISG</span><span class="tag">type I interferon</span><span class="tag">pDC</span><span class="tag">antiviral</span></div>
       </div>
       <div class="research-card">
         <div class="card-icon">💻</div>
