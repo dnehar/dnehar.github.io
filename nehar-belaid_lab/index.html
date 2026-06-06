@@ -162,6 +162,44 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
 .fade-up-d2 { animation-delay: 0.2s; }
 .fade-up-d3 { animation-delay: 0.3s; }
 .fade-up-d4 { animation-delay: 0.45s; }
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hero-content { grid-template-columns: 1fr; padding: 6rem 1.25rem 3rem; gap: 2rem; }
+  .hero-visual { display: none; }
+  .hero-title { font-size: 2rem; }
+  .hero-sub { font-size: 0.95rem; }
+  .hero-affil { font-size: 0.75rem; flex-wrap: wrap; }
+  section { padding: 3.5rem 1.25rem; }
+  .research-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr; }
+  .team-pi { flex-direction: column; text-align: center; align-items: center; gap: 1.25rem; }
+  .team-pi .team-avatar { margin: 0 auto; }
+  .pi-bio { text-align: left; }
+  .pi-links { flex-wrap: wrap; justify-content: center; }
+  .pub-item { flex-direction: column; gap: 0.4rem; padding: 1rem 1.25rem; }
+  .pub-year { min-width: unset; }
+  .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .positions-grid { grid-template-columns: 1fr; }
+  .join-quote { flex-direction: column; padding: 1.75rem; gap: 1.25rem; }
+  .join-quote-text { font-size: 1.1rem; }
+  .form-row { grid-template-columns: 1fr; }
+  .section-title { font-size: 1.7rem; }
+}
+@media (max-width: 768px) {
+  #hamburger { display: flex !important; }
+  #nav-links.open {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 64px; left: 0; right: 0;
+    background: rgba(11,31,58,0.98);
+    padding: 1rem 1.5rem 1.5rem;
+    gap: 0.75rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  #nav-links.open a { font-size: 1rem; }
+}
 </style>
 </head>
 <body>
@@ -186,14 +224,19 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
       </svg>
       <span class="nav-name">Nehar-Belaid Lab</span>
     </a>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#joinus">Join Us</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" onclick="closeMenu()">Home</a></li>
+      <li><a href="#research" onclick="closeMenu()">Research</a></li>
+      <li><a href="#team" onclick="closeMenu()">Team</a></li>
+      <li><a href="#publications" onclick="closeMenu()">Publications</a></li>
+      <li><a href="#joinus" onclick="closeMenu()">Join Us</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
     </ul>
+    <button id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu" style="display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px">
+      <span style="display:block;width:22px;height:2px;background:rgba(255,255,255,0.8);border-radius:2px;transition:all 0.2s"></span>
+      <span style="display:block;width:22px;height:2px;background:rgba(255,255,255,0.8);border-radius:2px;transition:all 0.2s"></span>
+      <span style="display:block;width:22px;height:2px;background:rgba(255,255,255,0.8);border-radius:2px;transition:all 0.2s"></span>
+    </button>
   </div>
 </nav>
 
@@ -601,6 +644,14 @@ function draw() {
   requestAnimationFrame(draw);
 }
 draw();
+</script>
+<script>
+function toggleMenu() {
+  document.getElementById('nav-links').classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('nav-links').classList.remove('open');
+}
 </script>
 </body>
 </html>
