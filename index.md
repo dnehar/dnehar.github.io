@@ -19,7 +19,7 @@ My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven
 
 <sup>#</sup> denotes equal contribution
 
-1. **Nehar-Belaid D**<sup>$</sup>, Thibodeau A, Eroglu A, Marches R, Eryilmaz G, Unutmaz D, Mejias A, Pascual V, Kuchel G<sup>#</sup>, Ramilo O<sup>#</sup>, Banchereau J<sup>#</sup>, Ucar D<sup>#,$</sup>. _Single-cell map of the human immune system across the lifespan reveals infant-specific immune signatures_. Accepted in principle. **Nature Communications**.   [Preprint: www.biorxiv.org/content/10.1101/2025.07.28.667181v1]. PMID:40766403. <sup>$</sup>corresponding authors.
+1. **Nehar-Belaid D**<sup>$</sup>, Thibodeau A, Eroglu A, Marches R, Eryilmaz G, Unutmaz D, Mejias A, Pascual V, Kuchel G<sup>#</sup>, Ramilo O<sup>#</sup>, Banchereau J<sup>#</sup>, Ucar D<sup>#,$</sup>. _Single-cell map of the human immune system across the lifespan reveals infant-specific immune signatures_. **Nature Communications**. 2026.   [https://www.nature.com/articles/s41467-026-73729-2]. PMID:40766403. <sup>$</sup>corresponding authors.
 
 2. Grabauskas T, Trinity L, Verschoor C.P,  **Nehar-Belaid D**, Marches R, Eryilmaz G, Mahajan A, Baarathi S, Thibodeau A,  Picard E, Kuo C-L, Schmader K.E,  Colon-Emeric C, Whitson H.E, Paust S, García-Sastre A, Yaari G, Banchereau J, Kuchel G.A, Ucar D. _CMV-specific clonal expansion of Th1, GZMK⁺ CD8⁺, and TEMRA T cells revealed by human PBMC single cell profiling_. Accepted in principle. **Genome Biology**. 2026. [Preprint: doi.org/10.1101/2025.06.24.661167]. PMID: 40666903.
 
@@ -82,7 +82,7 @@ My ongoing research in the [Ucar lab] focuses on using systems Immunology-driven
 [Google scholar]: https://scholar.google.fr/citations?user=zDjOYRUAAAAJ&hl=fr
 [My Bibliography]: https://www.ncbi.nlm.nih.gov/myncbi/1Li--NSWc6YQS/bibliography/public/
 
-[Preprint: https://www.biorxiv.org/content/10.64898/2026.05.08.723786v1]: https://www.biorxiv.org/content/10.64898/2026.05.08.723786v1
+[https://www.nature.com/articles/s41467-026-73729-2]: https://www.nature.com/articles/s41467-026-73729-2
 [Preprint: doi.org/10.1101/2025.06.24.661167]: https://www.biorxiv.org/content/10.1101/2025.06.24.661167v1
 [Preprint: www.biorxiv.org/content/10.1101/2025.07.28.667181v1]: https://www.biorxiv.org/content/10.1101/2025.07.28.667181v1
 [doi:10.1038/s41467-025-59411-z]: https://pubmed.ncbi.nlm.nih.gov/40379618/
