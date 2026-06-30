@@ -75,6 +75,39 @@ section { padding: 6rem 2rem; }
 .card-body { font-size: 0.9rem; color: var(--gray-700); line-height: 1.7; }
 .card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 1.25rem; }
 .tag { font-family: var(--font-mono); font-size: 0.7rem; color: var(--teal); background: var(--teal-pale); padding: 3px 8px; border-radius: 3px; letter-spacing: 0.04em; }
+.research-card.clickable { cursor: pointer; }
+.card-expand-hint { font-family: var(--font-mono); font-size: 0.72rem; color: var(--teal); margin-top: 1rem; display: flex; align-items: center; gap: 6px; opacity: 0.85; }
+.research-card.clickable:hover .card-expand-hint { text-decoration: underline; }
+
+/* Modal */
+.modal-overlay { position: fixed; inset: 0; background: rgba(7,16,30,0.72); backdrop-filter: blur(3px); z-index: 1000; display: none; align-items: center; justify-content: center; padding: 2rem; }
+.modal-overlay.open { display: flex; }
+.modal-box { background: var(--white); border-radius: 14px; max-width: 880px; width: 100%; max-height: 86vh; overflow-y: auto; position: relative; box-shadow: 0 30px 80px rgba(0,0,0,0.35); }
+.modal-header { background: var(--navy); padding: 2rem 2.5rem; border-radius: 14px 14px 0 0; position: relative; }
+.modal-eyebrow { font-family: var(--font-mono); font-size: 0.74rem; color: var(--teal-light); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.6rem; }
+.modal-title { font-family: var(--font-display); font-size: 1.7rem; color: var(--white); line-height: 1.25; }
+.modal-close { position: absolute; top: 1.5rem; right: 1.75rem; width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,0.1); border: none; color: white; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+.modal-close:hover { background: rgba(255,255,255,0.22); }
+.modal-body { padding: 2.25rem 2.5rem 2.5rem; }
+.modal-section { margin-bottom: 1.75rem; }
+.modal-section:last-child { margin-bottom: 0; }
+.modal-section h4 { font-family: var(--font-display); font-size: 1.1rem; color: var(--navy); margin-bottom: 0.6rem; }
+.modal-section p { font-size: 0.94rem; color: var(--gray-700); line-height: 1.75; margin-bottom: 0.5rem; }
+.modal-figure { margin: 1.25rem 0; border: 1px solid var(--gray-300); border-radius: 10px; overflow: hidden; background: var(--gray-100); }
+.modal-figure svg { width: 100%; height: auto; display: block; }
+.modal-figure-caption { font-size: 0.78rem; color: var(--gray-500); padding: 0.75rem 1rem; border-top: 1px solid var(--gray-300); line-height: 1.5; }
+.modal-stat-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin: 1.25rem 0; }
+.modal-stat { background: var(--teal-pale); border-radius: 8px; padding: 1rem; text-align: center; }
+.modal-stat-num { font-family: var(--font-display); font-size: 1.5rem; color: var(--teal); }
+.modal-stat-label { font-size: 0.74rem; color: var(--gray-700); margin-top: 2px; }
+@media (max-width: 768px) {
+  .modal-overlay { padding: 0; }
+  .modal-box { max-height: 100vh; border-radius: 0; }
+  .modal-header { border-radius: 0; padding: 1.5rem 1.5rem; }
+  .modal-body { padding: 1.5rem 1.5rem 2rem; }
+  .modal-stat-row { grid-template-columns: 1fr; }
+  .modal-title { font-size: 1.35rem; }
+}
 
 #team { background: var(--navy); }
 #team .section-title { color: var(--white); }
@@ -334,11 +367,12 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
     <h2 class="section-title">Mapping immunity at single-cell resolution</h2>
     <p class="section-intro">Our lab integrates single-cell transcriptomics, epigenomics, and systems-level computational analysis to understand how immune cell identities, states, and networks change across human development, aging, and disease.</p>
     <div class="research-grid">
-      <div class="research-card">
+      <div class="research-card clickable" onclick="openModal('infant-dev')">
         <div class="card-icon">🍼</div>
         <div class="card-title">Infant immune development</div>
         <p class="card-body">Infancy is the most immunologically dynamic period of life. We study unique infant immune features — including SOX4⁺ naïve T cells, constitutive ISG expression, and pDC predominance — to understand early-life immune programming.</p>
         <div class="card-tags"><span class="tag">SOX4+ T cells</span><span class="tag">pDC</span><span class="tag">ISG</span><span class="tag">Th2 bias</span></div>
+        <div class="card-expand-hint">View project details →</div>
       </div>
       <div class="research-card">
         <div class="card-icon">🧬</div>
@@ -369,7 +403,7 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
     <p class="section-intro">We are a diverse, collaborative team of immunologists and computational biologists at Emory University. We are currently building the lab and recruiting at all levels.</p>
     <div class="team-grid">
       <div class="team-card team-pi">
-        <div class="team-avatar" style="background:none;padding:0;overflow:hidden;border:2px solid var(--teal)"><img src="1L3A1571.jpg" alt="Djamel Nehar-Belaid" style="width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:50%"></div>
+        <div class="team-avatar" style="background:none;padding:0;overflow:hidden;border:2px solid var(--teal)"><img src="Headshot_DjamelNeharBelaid.jpg" alt="Djamel Nehar-Belaid" style="width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:50%"></div>
         <div>
           <div class="team-name">Djamel Nehar-Belaid, PhD</div>
           <div class="team-role">Principal Investigator</div>
@@ -619,6 +653,100 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
 </section>
 
 <div class="teal-bar"></div>
+
+<!-- Modal: Infant immune development -->
+<div class="modal-overlay" id="modal-infant-dev" onclick="if(event.target===this) closeModal('infant-dev')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <button class="modal-close" onclick="closeModal('infant-dev')" aria-label="Close">✕</button>
+      <div class="modal-eyebrow">Research Focus · Project Detail</div>
+      <div class="modal-title">Infant immune development</div>
+    </div>
+    <div class="modal-body">
+
+      <div class="modal-section">
+        <h4>Why infancy?</h4>
+        <p>The first months of life represent the most rapid and dramatic remodeling the human immune system ever undergoes. A newborn must transition from a sterile, protected uterine environment to a world full of microbes, all while their adaptive immune system is still maturing. Rather than being simply an "immature" version of the adult system, the infant immune system has its own distinct cellular states, gene expression programs, and functional strategies that are specifically tuned to this period of life.</p>
+        <p>Using single-cell RNA-seq, ATAC-seq, and multi-omic profiling of blood samples spanning infancy through old age, we are building a reference map of how immune cell composition and cell states shift across the human lifespan, with a particular focus on the first year of life.</p>
+      </div>
+
+      <div class="modal-figure">
+        <svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram comparing infant and adult immune cell composition">
+          <rect width="760" height="300" fill="#0B1F3A"/>
+          <text x="190" y="34" text-anchor="middle" font-family="DM Serif Display, Georgia, serif" font-size="16" fill="white" opacity="0.9">Infant blood</text>
+          <text x="570" y="34" text-anchor="middle" font-family="DM Serif Display, Georgia, serif" font-size="16" fill="white" opacity="0.9">Adult blood</text>
+          <line x1="380" y1="50" x2="380" y2="270" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+          <!-- Infant pie-like cluster (more pDC, more SOX4 naive T) -->
+          <g transform="translate(190,170)">
+            <circle r="92" fill="#1A6FBF" opacity="0.25"/>
+            <path d="M0 0 L0 -92 A92 92 0 0 1 79.7 -46 Z" fill="#3B9FE0" opacity="0.9"/>
+            <path d="M0 0 L79.7 -46 A92 92 0 0 1 79.7 46 Z" fill="#E8A234" opacity="0.85"/>
+            <path d="M0 0 L79.7 46 A92 92 0 0 1 0 92 Z" fill="#9F7FCC" opacity="0.8"/>
+            <path d="M0 0 L0 92 A92 92 0 0 1 -92 0 Z" fill="#5BB8F0" opacity="0.55"/>
+            <path d="M0 0 L-92 0 A92 92 0 0 1 0 -92 Z" fill="#7A9090" opacity="0.45"/>
+          </g>
+          <!-- Adult pie-like cluster (more memory T, fewer pDC) -->
+          <g transform="translate(570,170)">
+            <circle r="92" fill="#1A6FBF" opacity="0.25"/>
+            <path d="M0 0 L0 -92 A92 92 0 0 1 50 -77.4 Z" fill="#3B9FE0" opacity="0.55"/>
+            <path d="M0 0 L50 -77.4 A92 92 0 0 1 90 -22 Z" fill="#E8A234" opacity="0.45"/>
+            <path d="M0 0 L90 -22 A92 92 0 1 1 -10 92 Z" fill="#9F7FCC" opacity="0.85"/>
+            <path d="M0 0 L-10 92 A92 92 0 0 1 -92 0 Z" fill="#5BB8F0" opacity="0.55"/>
+            <path d="M0 0 L-92 0 A92 92 0 0 1 0 -92 Z" fill="#7A9090" opacity="0.4"/>
+          </g>
+          <!-- Legend -->
+          <g font-family="DM Sans, sans-serif" font-size="11" fill="rgba(255,255,255,0.75)">
+            <rect x="60" y="262" width="9" height="9" fill="#3B9FE0"/><text x="74" y="270">SOX4⁺ naïve T cells</text>
+            <rect x="240" y="262" width="9" height="9" fill="#E8A234"/><text x="254" y="270">pDCs</text>
+            <rect x="320" y="262" width="9" height="9" fill="#9F7FCC"/><text x="334" y="270">Memory T cells</text>
+            <rect x="460" y="262" width="9" height="9" fill="#5BB8F0"/><text x="474" y="270">B cells</text>
+            <rect x="540" y="262" width="9" height="9" fill="#7A9090"/><text x="554" y="270">Monocytes</text>
+          </g>
+        </svg>
+        <div class="modal-figure-caption">Schematic comparison of immune cell composition in infant vs. adult blood. Infants show a marked enrichment of SOX4⁺ naïve T cells and plasmacytoid dendritic cells (pDCs), while adults show expansion of antigen-experienced memory T cell populations.</div>
+      </div>
+
+      <div class="modal-section">
+        <h4>What we're studying</h4>
+        <p><strong>SOX4⁺ naïve T cells:</strong> a population of naïve T cells highly enriched in infants that carries stemness and thymic-emigrant signatures, with a built-in bias toward Th2 differentiation.</p>
+        <p><strong>Constitutive interferon signaling:</strong> infant T cells express interferon-stimulated genes (ISGs) at baseline, without any active infection — a kind of pre-armed antiviral state that may help compensate for an adaptive immune system that is still coming online.</p>
+        <p><strong>pDC predominance:</strong> plasmacytoid dendritic cells, the body's major type I interferon producers, are proportionally more abundant in infant blood, which may help explain the constitutive ISG signature seen in T cells.</p>
+      </div>
+
+      <div class="modal-stat-row">
+        <div class="modal-stat"><div class="modal-stat-num">0–12 mo</div><div class="modal-stat-label">Age window of focus</div></div>
+        <div class="modal-stat"><div class="modal-stat-num">scRNA + ATAC</div><div class="modal-stat-label">Multi-omic profiling</div></div>
+        <div class="modal-stat"><div class="modal-stat-num">RSV / SARS-CoV-2</div><div class="modal-stat-label">Infections studied</div></div>
+      </div>
+
+      <div class="modal-section">
+        <h4>Why it matters</h4>
+        <p>Understanding what's normal — and distinctly infant — about early-life immunity is a prerequisite for understanding why infants respond differently to infections like RSV and SARS-CoV-2, and for designing vaccines and immune therapies that work with, rather than against, the unique biology of this life stage.</p>
+        <p>This work builds directly on our recent study, <em>"Single-cell map of the human immune system across the lifespan reveals infant-specific immune signatures"</em> (Nature Communications, 2026), and continues with follow-on projects in the lab.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal(id) {
+  document.getElementById('modal-' + id).classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(id) {
+  document.getElementById('modal-' + id).classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal-overlay.open').forEach(function(m) {
+      m.classList.remove('open');
+    });
+    document.body.style.overflow = '';
+  }
+});
+</script>
 
 <footer>
   <div class="footer-inner">
