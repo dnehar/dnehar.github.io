@@ -665,46 +665,9 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
     </div>
     <div class="modal-body">
 
-      <div class="modal-section">
-        <h4>Why infancy?</h4>
-        <p>The first months of life represent the most rapid and dramatic remodeling the human immune system ever undergoes. A newborn must transition from a sterile, protected uterine environment to a world full of microbes, all while their adaptive immune system is still maturing. Rather than being simply an "immature" version of the adult system, the infant immune system has its own distinct cellular states, gene expression programs, and functional strategies that are specifically tuned to this period of life.</p>
-        <p>Using single-cell RNA-seq, ATAC-seq, and multi-omic profiling of blood samples spanning infancy through old age, we are building a reference map of how immune cell composition and cell states shift across the human lifespan, with a particular focus on the first year of life.</p>
-      </div>
-
-      <div class="modal-figure">
-        <svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram comparing infant and adult immune cell composition">
-          <rect width="760" height="300" fill="#0B1F3A"/>
-          <text x="190" y="34" text-anchor="middle" font-family="DM Serif Display, Georgia, serif" font-size="16" fill="white" opacity="0.9">Infant blood</text>
-          <text x="570" y="34" text-anchor="middle" font-family="DM Serif Display, Georgia, serif" font-size="16" fill="white" opacity="0.9">Adult blood</text>
-          <line x1="380" y1="50" x2="380" y2="270" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-          <!-- Infant pie-like cluster (more pDC, more SOX4 naive T) -->
-          <g transform="translate(190,170)">
-            <circle r="92" fill="#1A6FBF" opacity="0.25"/>
-            <path d="M0 0 L0 -92 A92 92 0 0 1 79.7 -46 Z" fill="#3B9FE0" opacity="0.9"/>
-            <path d="M0 0 L79.7 -46 A92 92 0 0 1 79.7 46 Z" fill="#E8A234" opacity="0.85"/>
-            <path d="M0 0 L79.7 46 A92 92 0 0 1 0 92 Z" fill="#9F7FCC" opacity="0.8"/>
-            <path d="M0 0 L0 92 A92 92 0 0 1 -92 0 Z" fill="#5BB8F0" opacity="0.55"/>
-            <path d="M0 0 L-92 0 A92 92 0 0 1 0 -92 Z" fill="#7A9090" opacity="0.45"/>
-          </g>
-          <!-- Adult pie-like cluster (more memory T, fewer pDC) -->
-          <g transform="translate(570,170)">
-            <circle r="92" fill="#1A6FBF" opacity="0.25"/>
-            <path d="M0 0 L0 -92 A92 92 0 0 1 50 -77.4 Z" fill="#3B9FE0" opacity="0.55"/>
-            <path d="M0 0 L50 -77.4 A92 92 0 0 1 90 -22 Z" fill="#E8A234" opacity="0.45"/>
-            <path d="M0 0 L90 -22 A92 92 0 1 1 -10 92 Z" fill="#9F7FCC" opacity="0.85"/>
-            <path d="M0 0 L-10 92 A92 92 0 0 1 -92 0 Z" fill="#5BB8F0" opacity="0.55"/>
-            <path d="M0 0 L-92 0 A92 92 0 0 1 0 -92 Z" fill="#7A9090" opacity="0.4"/>
-          </g>
-          <!-- Legend -->
-          <g font-family="DM Sans, sans-serif" font-size="11" fill="rgba(255,255,255,0.75)">
-            <rect x="60" y="262" width="9" height="9" fill="#3B9FE0"/><text x="74" y="270">SOX4⁺ naïve T cells</text>
-            <rect x="240" y="262" width="9" height="9" fill="#E8A234"/><text x="254" y="270">pDCs</text>
-            <rect x="320" y="262" width="9" height="9" fill="#9F7FCC"/><text x="334" y="270">Memory T cells</text>
-            <rect x="460" y="262" width="9" height="9" fill="#5BB8F0"/><text x="474" y="270">B cells</text>
-            <rect x="540" y="262" width="9" height="9" fill="#7A9090"/><text x="554" y="270">Monocytes</text>
-          </g>
-        </svg>
-        <div class="modal-figure-caption">Schematic comparison of immune cell composition in infant vs. adult blood. Infants show a marked enrichment of SOX4⁺ naïve T cells and plasmacytoid dendritic cells (pDCs), while adults show expansion of antigen-experienced memory T cell populations.</div>
+      <div class="modal-figure" style="background:var(--white)">
+        <img src="project_1.png" alt="Study design: longitudinal PBMC sampling from mothers and infants at birth, 2 weeks, 2, 6, and 12 months, profiled by scRNA-seq and snATAC-seq" style="width:100%;height:auto;display:block">
+        <div class="modal-figure-caption">Study design: PBMCs are collected longitudinally from mother–infant pairs at birth and at 2 weeks, 2, 6, and 12 months of age, and profiled by single-cell RNA-seq (mRNA expression) and single-nucleus ATAC-seq (chromatin accessibility) to track how immune cell states change over the first year of life.</div>
       </div>
 
       <div class="modal-section">
