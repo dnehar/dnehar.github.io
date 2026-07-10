@@ -375,11 +375,12 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
         <div class="card-tags"><span class="tag">SOX4+ T cells</span><span class="tag">pDC</span><span class="tag">ISG</span><span class="tag">Th2 bias</span></div>
         <div class="card-expand-hint">View project details →</div>
       </div>
-      <div class="research-card">
+      <div class="research-card clickable" onclick="openModal('sox4-biology')">
         <div class="card-icon">🧬</div>
         <div class="card-title">SOX4⁺ T cell biology</div>
         <p class="card-body">We investigate the abundance, function, and epigenetic landscape of SOX4⁺ naïve T cells — a population enriched in infants that carries stemness signatures, thymic emigrant features, and a Th2 differentiation bias.</p>
         <div class="card-tags"><span class="tag">SOX4</span><span class="tag">naïve T cells</span><span class="tag">snATAC-seq</span><span class="tag">thymic emigrants</span></div>
+        <div class="card-expand-hint">View project details →</div>
       </div>
       <div class="research-card">
         <div class="card-icon">⚡</div>
@@ -674,7 +675,6 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
         <h4>What we're studying</h4>
         <p><strong>SOX4⁺ naïve T cells:</strong> a population of naïve T cells highly enriched in infants that carries stemness and thymic-emigrant signatures, with a built-in bias toward Th2 differentiation.</p>
         <p><strong>Constitutive interferon signaling:</strong> infant T cells express interferon-stimulated genes (ISGs) at baseline, without any active infection — a kind of pre-armed antiviral state that may help compensate for an adaptive immune system that is still coming online.</p>
-        <p><strong>pDC predominance:</strong> plasmacytoid dendritic cells, the body's major type I interferon producers, are proportionally more abundant in infant blood, which may help explain the constitutive ISG signature seen in T cells.</p>
       </div>
 
       <div class="modal-stat-row">
@@ -687,6 +687,48 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
         <h4>Why it matters</h4>
         <p>Understanding what's normal — and distinctly infant — about early-life immunity is a prerequisite for understanding why infants respond differently to infections like RSV and SARS-CoV-2, and for designing vaccines and immune therapies that work with, rather than against, the unique biology of this life stage.</p>
         <p>This work builds directly on our recent study, <em>"Single-cell map of the human immune system across the lifespan reveals infant-specific immune signatures"</em> (Nature Communications, 2026), and continues with follow-on projects in the lab.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal: SOX4+ T cell biology -->
+<div class="modal-overlay" id="modal-sox4-biology" onclick="if(event.target===this) closeModal('sox4-biology')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <button class="modal-close" onclick="closeModal('sox4-biology')" aria-label="Close">✕</button>
+      <div class="modal-eyebrow">Research Focus · Project Detail</div>
+      <div class="modal-title">SOX4⁺ T cell biology</div>
+    </div>
+    <div class="modal-body">
+
+      <div class="modal-section">
+        <h4>What are SOX4⁺ T cells?</h4>
+        <p>SOX4⁺ naïve T cells are a distinct population of naïve T cells markedly enriched in infants. They express a transcriptional program — including <em>SOX4</em>, <em>ID3</em>, and <em>IKZF2</em> — associated with stemness, recent thymic emigrant status, and hypo-responsiveness, and they carry a built-in bias toward Th2 differentiation.</p>
+      </div>
+
+      <div class="modal-figure" style="background:var(--white)">
+        <img src="Project_2.png" alt="Overview of SOX4+ T cell biology: stemness and hypo-responsiveness, role in humoral immunity, role in early-life immunity, and therapeutic applications" style="width:100%;height:auto;display:block">
+        <div class="modal-figure-caption">SOX4⁺ T cells carry a stemness and hypo-responsiveness program (recent thymic emigrants, tissue-resident in infant lungs and intestines, dysfunctional CAR T cells), contribute to humoral immunity by supporting ectopic lymphoid structures, may shape antibody responses across early life, and represent a potential target for improving vaccine responses, reducing infection susceptibility, and enhancing cancer immunotherapy.</div>
+      </div>
+
+      <div class="modal-section">
+        <h4>What we're studying</h4>
+        <p><strong>Stemness and hypo-responsiveness:</strong> SOX4⁺ T cells share features with recent thymic emigrants and tissue-resident T cells in infant lungs and intestines, and related dysfunctional states have been described in CAR T cells.</p>
+        <p><strong>Role in humoral immunity:</strong> through CXCL13 signaling, SOX4⁺ T cells can support the formation of ectopic lymphoid structures that shape antibody responses.</p>
+        <p><strong>Role in early-life immunity:</strong> we are asking how the abundance of SOX4⁺ T cells across the first year of life relates to the maturation of antibody responses to infection and vaccination.</p>
+      </div>
+
+      <div class="modal-stat-row">
+        <div class="modal-stat"><div class="modal-stat-num">SOX4 / ID3 / IKZF2</div><div class="modal-stat-label">Core transcriptional program</div></div>
+        <div class="modal-stat"><div class="modal-stat-num">snATAC-seq</div><div class="modal-stat-label">Epigenetic profiling</div></div>
+        <div class="modal-stat"><div class="modal-stat-num">Th2 bias</div><div class="modal-stat-label">Differentiation skew</div></div>
+      </div>
+
+      <div class="modal-section">
+        <h4>Why it matters</h4>
+        <p>Because SOX4⁺ T cells are enriched in infants and linked to hypo-responsiveness, understanding their biology may help explain why early-life immune and vaccine responses differ from those in adults — and could point to strategies for enhancing vaccine responses, reducing susceptibility to infection, and improving the effectiveness of cell-based cancer therapies.</p>
       </div>
 
     </div>
