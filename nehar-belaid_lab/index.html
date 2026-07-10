@@ -69,16 +69,20 @@ section { padding: 6rem 2rem; }
 .research-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
 .research-card { background: var(--gray-100); border: 1px solid var(--gray-300); border-radius: 10px; padding: 2rem; transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s; position: relative; overflow: hidden; }
 .research-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--navy); transform: scaleX(0); transform-origin: left; transition: transform 0.3s; }
-.research-card:hover { box-shadow: 0 8px 32px rgba(11,31,58,0.1); transform: translateY(-3px); border-color: var(--teal); }
-.research-card:hover::before { transform: scaleX(1); }
+.research-card.clickable:hover { box-shadow: 0 8px 32px rgba(11,31,58,0.1); transform: translateY(-3px); border-color: var(--teal); }
+.research-card.clickable:hover::before { transform: scaleX(1); }
 .card-icon { width: 48px; height: 48px; background: var(--teal-pale); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; font-size: 1.4rem; }
-.card-title { font-family: var(--font-display); font-size: 1.18rem; color: var(--navy); margin-bottom: 0.75rem; }
+.card-title { font-family: var(--font-display); font-size: 1.18rem; color: var(--navy); margin-bottom: 0.75rem; padding-right: 2rem; }
 .card-body { font-size: 0.9rem; color: var(--gray-700); line-height: 1.7; }
 .card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 1.25rem; }
 .tag { font-family: var(--font-mono); font-size: 0.7rem; color: var(--teal); background: var(--teal-pale); padding: 3px 8px; border-radius: 3px; letter-spacing: 0.04em; }
 .research-card.clickable { cursor: pointer; }
 .card-expand-hint { font-family: var(--font-mono); font-size: 0.72rem; color: var(--teal); margin-top: 1rem; display: flex; align-items: center; gap: 6px; opacity: 0.85; }
 .research-card.clickable:hover .card-expand-hint { text-decoration: underline; }
+.card-expand-icon { position: absolute; top: 1.5rem; right: 1.5rem; width: 30px; height: 30px; border-radius: 50%; background: var(--teal-pale); display: flex; align-items: center; justify-content: center; transition: background 0.2s, transform 0.2s; }
+.card-expand-icon svg { width: 13px; height: 13px; stroke: var(--teal); transition: stroke 0.2s; }
+.research-card.clickable:hover .card-expand-icon { background: var(--teal); transform: scale(1.08); }
+.research-card.clickable:hover .card-expand-icon svg { stroke: white; }
 
 /* Modal */
 .modal-overlay { position: fixed; inset: 0; background: rgba(7,16,30,0.72); backdrop-filter: blur(3px); z-index: 1000; display: none; align-items: center; justify-content: center; padding: 2rem; }
@@ -374,6 +378,7 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
     <p class="section-intro">Despite this, the unique features of infant immune responses remain poorly understood. For example, while infants are more susceptible to respiratory infections such as influenza and RSV, they mount effective immune responses to other respiratory viruses like SARS-CoV-2, often developing milder symptoms. By defining early immune signatures in health and disease, our program aims to advance more effective pediatric treatments and preventive measures.</p>
     <div class="research-grid">
       <div class="research-card clickable" onclick="openModal('infant-dev')">
+        <div class="card-expand-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 17L17 7M9 7H17V15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="card-icon">🍼</div>
         <div class="card-title">Infant immune development</div>
         <p class="card-body">Infancy is the most immunologically dynamic period of life. We study unique infant immune features — including SOX4⁺ naïve T cells, constitutive ISG expression, and pDC predominance — to understand early-life immune programming.</p>
@@ -381,6 +386,7 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
         <div class="card-expand-hint">View project details →</div>
       </div>
       <div class="research-card clickable" onclick="openModal('sox4-biology')">
+        <div class="card-expand-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 17L17 7M9 7H17V15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="card-icon">🧬</div>
         <div class="card-title">SOX4⁺ T cell biology</div>
         <p class="card-body">We investigate the abundance, function, and epigenetic landscape of SOX4⁺ naïve T cells — a population enriched in infants that carries stemness signatures, thymic emigrant features, and a Th2 differentiation bias.</p>
