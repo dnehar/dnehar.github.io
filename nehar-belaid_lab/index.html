@@ -411,7 +411,7 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
           <div class="team-role">Principal Investigator</div>
           <div class="pi-bio">Dr. Nehar-Belaid is an expert in systems immunology and single-cell genomics. His work spans immune aging, early-life immunity, autoimmune disease, and vaccine biology. He trained in Dr. Jacques Banchereau's labs at The Jackson Laboratory before establishing his independent lab in the Department of Pathology and Laboratory Medicine at Emory University School of Medicine in September 2026.</div>
           <div class="pi-links">
-            <a href="#" class="pi-link email-link" data-user="ZG5laGFyYg==" data-domain="ZW1vcnkuZWR1" data-icon="✉ ">✉ Loading email…</a>
+            <a href="#" class="pi-link email-reveal" data-user="ZG5laGFyYg==" data-domain="ZW1vcnkuZWR1" onclick="return revealEmail(this, event)">✉ Click to reveal email</a>
             <a href="https://pubmed.ncbi.nlm.nih.gov/?term=nehar-belaid" target="_blank" class="pi-link">PubMed</a>
             <a href="https://scholar.google.fr/citations?user=zDjOYRUAAAAJ&hl=fr" target="_blank" class="pi-link">Google Scholar</a>
             <a href="https://bsky.app/profile/dnehar.bsky.social" target="_blank" class="pi-link">🦋 Bluesky</a>
@@ -769,20 +769,6 @@ function closeMenu() {
 }
 </script>
 <script>
-function loadEmailLinks() {
-  document.querySelectorAll('.email-link').forEach(function(el) {
-    try {
-      var user = atob(el.getAttribute('data-user'));
-      var domain = atob(el.getAttribute('data-domain'));
-      var email = user + '@' + domain;
-      var icon = el.getAttribute('data-icon') || '';
-      el.setAttribute('href', 'mailto:' + email);
-      el.textContent = icon + email;
-    } catch (e) { /* no-op */ }
-  });
-}
-loadEmailLinks();
-
 function revealEmail(el, e) {
   e.preventDefault();
   try {
