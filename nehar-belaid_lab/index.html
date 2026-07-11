@@ -40,9 +40,9 @@ nav { position: fixed; top: 0; width: 100%; z-index: 100; background: rgba(11,31
 .nav-links a { color: rgba(255,255,255,0.72); text-decoration: none; font-size: 0.875rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; transition: color 0.2s; }
 .nav-links a:hover { color: var(--teal-light); }
 
-#home { min-height: 100vh; background: var(--navy); position: relative; display: flex; align-items: center; overflow: hidden; }
+#home { min-height: 92vh; background: var(--navy); position: relative; display: flex; align-items: center; overflow: hidden; }
 #network-canvas { position: absolute; inset: 0; opacity: 0.18; }
-.hero-content { position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; padding: 8rem 2rem 5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.hero-content { position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; padding: 4.5rem 2rem 3.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
 .hero-eyebrow { font-family: var(--font-mono); font-size: 0.78rem; color: var(--amber); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 10px; }
 .hero-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: var(--amber); }
 .hero-title { font-family: var(--font-display); font-size: clamp(2.4rem, 4vw, 3.6rem); color: var(--white); line-height: 1.12; margin-bottom: 1.5rem; }
@@ -137,7 +137,8 @@ section { padding: 6rem 2rem; }
 
 #publications { background: var(--gray-100); }
 .pub-list { display: flex; flex-direction: column; gap: 1rem; }
-.pub-item { background: var(--white); border: 1px solid var(--gray-300); border-radius: 8px; padding: 1.5rem 1.75rem; display: flex; gap: 1.5rem; align-items: flex-start; transition: box-shadow 0.2s, border-color 0.2s; }
+.pub-item { background: var(--white); border: 1px solid var(--gray-300); border-left: 3px solid var(--gray-300); border-radius: 8px; padding: 1.5rem 1.75rem; display: flex; gap: 1.5rem; align-items: flex-start; transition: box-shadow 0.2s, border-color 0.2s; }
+.pub-item.pub-featured { border-left: 3px solid var(--teal); }
 .pub-item:hover { box-shadow: 0 4px 20px rgba(11,31,58,0.08); border-color: var(--teal); }
 .pub-year { font-family: var(--font-mono); font-size: 0.85rem; color: var(--teal); font-weight: 500; min-width: 44px; padding-top: 2px; }
 .pub-title { font-family: var(--font-display); font-size: 1rem; color: var(--navy); margin-bottom: 4px; line-height: 1.35; }
@@ -170,7 +171,7 @@ section { padding: 6rem 2rem; }
 .contact-grid { display: block; max-width: 640px; }
 .contact-intro { color: rgba(255,255,255,0.55); line-height: 1.75; margin-bottom: 2rem; font-size: 1rem; }
 .contact-item { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 1.25rem; }
-.contact-icon { width: 36px; height: 36px; flex-shrink: 0; background: rgba(26,111,191,0.12); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 1rem; color: var(--teal-light); }
+.contact-icon { width: 36px; height: 36px; flex-shrink: 0; background: rgba(232,162,52,0.14); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 1rem; color: var(--amber); }
 .contact-label { font-family: var(--font-mono); font-size: 0.72rem; color: var(--teal-light); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 2px; }
 .contact-val { color: rgba(255,255,255,0.8); font-size: 0.9rem; }
 .contact-val a { color: rgba(255,255,255,0.8); text-decoration: none; }
@@ -349,7 +350,7 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
     <h2 class="section-title">Immune Signatures of Early Life Immunity</h2>
     <p class="section-intro">Our lab leverages systems immunology to extract genomic signatures of immune responses to infection, vaccination, and various diseases, with a focus on translational pediatric immunology. Through close collaborations with clinicians, we identify mechanisms that can drive precision medicine, particularly in vulnerable populations.</p>
     <p class="section-intro" style="margin-bottom:1.5rem"><strong>Why pediatric immunology?</strong> Infants and young children are especially vulnerable to infectious diseases.</p>
-    <div class="modal-figure" style="max-width:650px;margin:0 0 2rem">
+    <div class="modal-figure" style="max-width:650px;margin:0 0 2rem;box-shadow:0 10px 34px rgba(11,31,58,0.12)">
       <img src="Home_page.png" alt="World Health Organization data on global child mortality in 2022: 5 million children under 5 died, 50% during the first month of life, with infections as the second leading cause" style="width:100%;height:auto;display:block">
     </div>
     <p class="section-intro">Despite this, the unique features of infant immune responses remain poorly understood. For example, while infants are more susceptible to respiratory infections such as influenza and RSV, they mount effective immune responses to other respiratory viruses like SARS-CoV-2, often developing milder symptoms. By defining early immune signatures in health and disease, our program aims to advance more effective pediatric treatments and preventive measures.</p>
@@ -408,19 +409,19 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
         </div>
       </div>
       <div class="team-card">
-        <div class="team-avatar" style="background:linear-gradient(135deg,#E8A234,#9A5C00)">?</div>
+        <div class="team-avatar" style="background:linear-gradient(135deg,#E8A234,#9A5C00);font-size:1.6rem">🔬</div>
         <div class="team-name">Postdoctoral Fellow</div>
         <div class="team-role">Position Open</div>
         <div class="team-focus">Single-cell genomics · immune aging</div>
       </div>
       <div class="team-card">
-        <div class="team-avatar" style="background:linear-gradient(135deg,#E8A234,#9A5C00)">?</div>
+        <div class="team-avatar" style="background:linear-gradient(135deg,#E8A234,#9A5C00);font-size:1.6rem">💻</div>
         <div class="team-name">PhD Student</div>
         <div class="team-role">Position Open</div>
         <div class="team-focus">Computational immunology · disease modeling</div>
       </div>
       <div class="team-card">
-        <div class="team-avatar" style="background:linear-gradient(135deg,#E8A234,#9A5C00)">?</div>
+        <div class="team-avatar" style="background:linear-gradient(135deg,#E8A234,#9A5C00);font-size:1.6rem">🧪</div>
         <div class="team-name">Research Scientist</div>
         <div class="team-role">Position Open</div>
         <div class="team-focus">Experimental immunology · multi-omics</div>
@@ -438,7 +439,7 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
     </div>
     <div class="pub-list">
 
-      <div class="pub-item">
+      <div class="pub-item pub-featured">
         <div class="pub-year">2026</div>
         <div class="pub-content">
           <div class="pub-title"><a href="https://www.nature.com/articles/s41467-026-73729-2" target="_blank" style="color:var(--navy);text-decoration:none" onmouseover="this.style.color='var(--teal)'" onmouseout="this.style.color='var(--navy)'">Single-cell map of the human immune system across the lifespan reveals infant-specific immune signatures</a></div>
@@ -466,15 +467,6 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
       </div>
 
       <div class="pub-item">
-        <div class="pub-year">2023</div>
-        <div class="pub-content">
-          <div class="pub-title"><a href="https://doi.org/10.1016/j.smim.2023.101842" target="_blank" style="color:var(--navy);text-decoration:none" onmouseover="this.style.color='var(--teal)'" onmouseout="this.style.color='var(--navy)'">Baseline immune states (BIS) associated with vaccine responsiveness and factors that shape the BIS</a></div>
-          <div class="pub-authors"><strong>Nehar-Belaid D</strong>, Sokolowski M, Baarathi S, Banchereau J, Chaussabel D, Ucar D</div>
-          <div class="pub-journal">Seminars in Immunology &nbsp;<span class="pub-badge" style="background:#E3F2FD;color:#1565C0">Semin Immunol</span>&nbsp;<span class="pub-badge" style="background:#EEF2FB;color:#3A5AA0">PMID: 37717525</span></div>
-        </div>
-      </div>
-
-      <div class="pub-item">
         <div class="pub-year">2020</div>
         <div class="pub-content">
           <div class="pub-title"><a href="https://www.nature.com/articles/s41590-020-0743-0" target="_blank" style="color:var(--navy);text-decoration:none" onmouseover="this.style.color='var(--teal)'" onmouseout="this.style.color='var(--navy)'">Mapping systemic lupus erythematosus heterogeneity at the single-cell level</a></div>
@@ -489,6 +481,24 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
           <div class="pub-title"><a href="https://www.nature.com/articles/s41590-020-0643-3" target="_blank" style="color:var(--navy);text-decoration:none" onmouseover="this.style.color='var(--teal)'" onmouseout="this.style.color='var(--navy)'">Sestrins induce natural killer function in senescent-like CD8+ T cells</a></div>
           <div class="pub-authors">Pereira BI*, De Maeyer RPH*, Covre LP*, <strong>Nehar-Belaid D</strong>*, Lanna A, Ward S, Marches R, Chambers ES, Gomes DCO, Riddell NE, et al., Banchereau J<sup>#</sup>, Akbar AN<sup>#</sup></div>
           <div class="pub-journal">Nature Immunology &nbsp;<span class="pub-badge badge-ni">Nat Immunol</span>&nbsp;<span class="pub-badge" style="background:#EEF2FB;color:#3A5AA0">PMID: 32231301</span></div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2016</div>
+        <div class="pub-content">
+          <div class="pub-title"><a href="https://pubmed.ncbi.nlm.nih.gov/26643476/" target="_blank" style="color:var(--navy);text-decoration:none" onmouseover="this.style.color='var(--teal)'" onmouseout="this.style.color='var(--navy)'">Regulatory T Cells Orchestrate Similar Immune Evasion of Fetuses and Tumors in Mice</a></div>
+          <div class="pub-authors"><strong>Nehar-Belaid D</strong>, Courau T, Dérian N, Florez L, Ruocco MG, Klatzmann D</div>
+          <div class="pub-journal">The Journal of Immunology &nbsp;<span class="pub-badge" style="background:#E3F2FD;color:#1565C0">J Immunol</span>&nbsp;<span class="pub-badge" style="background:#EEF2FB;color:#3A5AA0">PMID: 26643476</span></div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2016</div>
+        <div class="pub-content">
+          <div class="pub-title"><a href="https://doi.org/10.1172/jci.insight.85974" target="_blank" style="color:var(--navy);text-decoration:none" onmouseover="this.style.color='var(--teal)'" onmouseout="this.style.color='var(--navy)'">TGFβ and VEGF cooperatively control the immunotolerant tumor environment and the efficacy of cancer immunotherapies</a></div>
+          <div class="pub-authors">Courau T, <strong>Nehar-Belaid D</strong>, Florez L, Levacher B, Vazquez T, Brimaud F, Bellier B, Klatzmann D</div>
+          <div class="pub-journal">JCI Insight &nbsp;<span class="pub-badge" style="background:#FFF3E0;color:#9A5C00">JCI Insight</span>&nbsp;<span class="pub-badge" style="background:#EEF2FB;color:#3A5AA0">PMID: 28678605</span></div>
         </div>
       </div>
 
