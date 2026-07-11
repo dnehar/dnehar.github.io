@@ -166,7 +166,7 @@ section { padding: 6rem 2rem; }
 #contact .section-title { color: var(--white); }
 #contact .section-label { color: var(--teal-light); }
 #contact .section-label::before { background: var(--teal-light); }
-.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+.contact-grid { display: block; max-width: 640px; }
 .contact-intro { color: rgba(255,255,255,0.55); line-height: 1.75; margin-bottom: 2rem; font-size: 1rem; }
 .contact-item { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 1.25rem; }
 .contact-icon { width: 36px; height: 36px; flex-shrink: 0; background: rgba(26,111,191,0.12); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 1rem; }
@@ -174,17 +174,6 @@ section { padding: 6rem 2rem; }
 .contact-val { color: rgba(255,255,255,0.8); font-size: 0.9rem; }
 .contact-val a { color: rgba(255,255,255,0.8); text-decoration: none; }
 .contact-val a:hover { color: var(--teal-light); }
-.contact-form { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 2rem; }
-.form-title { font-family: var(--font-display); font-size: 1.2rem; color: var(--white); margin-bottom: 1.5rem; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-.form-group { margin-bottom: 1rem; }
-.form-group label { display: block; font-size: 0.78rem; color: rgba(255,255,255,0.45); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 6px; font-family: var(--font-mono); }
-.form-group input, .form-group textarea, .form-group select { width: 100%; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 5px; padding: 0.65rem 0.9rem; color: var(--white); font-family: var(--font-body); font-size: 0.9rem; outline: none; transition: border-color 0.2s; }
-.form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--teal); }
-.form-group textarea { resize: vertical; min-height: 110px; }
-.form-group select option { background: var(--navy-mid); }
-.btn-submit { width: 100%; background: var(--teal); color: white; border: none; padding: 0.8rem; border-radius: 5px; font-size: 0.9rem; font-weight: 600; cursor: pointer; font-family: var(--font-body); letter-spacing: 0.03em; transition: background 0.2s; margin-top: 0.5rem; }
-.btn-submit:hover { background: var(--teal-light); }
 
 footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.06); }
 .footer-inner { max-width: 1200px; margin: 0 auto; }
@@ -218,11 +207,10 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
   .pi-links { flex-wrap: wrap; justify-content: center; }
   .pub-item { flex-direction: column; gap: 0.4rem; padding: 1rem 1.25rem; }
   .pub-year { min-width: unset; }
-  .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .contact-grid { max-width: none; }
   .positions-grid { grid-template-columns: 1fr; }
   .join-quote { flex-direction: column; padding: 1.75rem; gap: 1.25rem; }
   .join-quote-text { font-size: 1.1rem; }
-  .form-row { grid-template-columns: 1fr; }
   .section-title { font-size: 1.7rem; }
 }
 @media (max-width: 768px) {
@@ -642,26 +630,6 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
           <div><div class="contact-label">Publications</div><div class="contact-val"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=nehar-belaid" target="_blank">PubMed</a> · <a href="https://scholar.google.fr/citations?user=zDjOYRUAAAAJ&hl=fr" target="_blank" style="color:rgba(255,255,255,0.8)">Google Scholar</a></div></div>
         </div>
       </div>
-      <div class="contact-form">
-        <div class="form-title">Send a message</div>
-        <div class="form-row">
-          <div class="form-group"><label>First name</label><input type="text" placeholder="Jane"></div>
-          <div class="form-group"><label>Last name</label><input type="text" placeholder="Doe"></div>
-        </div>
-        <div class="form-group"><label>Email</label><input type="email" placeholder="jane.doe@university.edu"></div>
-        <div class="form-group">
-          <label>Reason for contact</label>
-          <select>
-            <option value="">Select one...</option>
-            <option>Postdoc position inquiry</option>
-            <option>PhD rotation inquiry</option>
-            <option>Research collaboration</option>
-            <option>General question</option>
-          </select>
-        </div>
-        <div class="form-group"><label>Message</label><textarea placeholder="Tell us about yourself and your interests..."></textarea></div>
-        <button class="btn-submit">Send Message →</button>
-      </div>
     </div>
   </div>
 </section>
@@ -770,7 +738,7 @@ document.addEventListener('keydown', function(e) {
   <div class="footer-inner">
     <p class="footer-text">
       © 2026 Nehar-Belaid Lab · Emory University School of Medicine. Department of Pathology and Laboratory Medicine - The Pathology Advanced Translational Research Unit (PATRU)<br>
-      <a href="#" class="email-link" data-user="ZG5laGFyYg==" data-domain="ZW1vcnkuZWR1">Loading email…</a> · Atlanta, GA
+      Atlanta, GA
     </p>
   </div>
 </footer>
