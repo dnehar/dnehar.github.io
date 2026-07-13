@@ -147,6 +147,8 @@ section { padding: 6rem 2rem; }
 .pub-authors strong { color: var(--teal); }
 .pub-journal { font-size: 0.82rem; color: var(--gray-700); font-style: italic; font-weight: 600; }
 .pub-badge { font-family: var(--font-mono); font-size: 0.68rem; padding: 2px 7px; border-radius: 3px; display: inline-block; margin-left: 8px; font-style: normal; }
+.pub-thumb { width: 160px; flex-shrink: 0; border-radius: 6px; overflow: hidden; border: 1px solid var(--gray-300); background: var(--white); align-self: center; }
+.pub-thumb img { width: 100%; height: auto; display: block; }
 .badge-ni { background: #EBF3FB; color: #1B6FAA; }
 .badge-nc { background: #E0EEF8; color: #1A5FA0; }
 .badge-lancet { background: #FEF3E2; color: #9A5C00; }
@@ -211,6 +213,7 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
   .pi-links { flex-wrap: wrap; justify-content: center; }
   .pub-item { flex-direction: column; gap: 0.4rem; padding: 1rem 1.25rem; }
   .pub-year { min-width: unset; }
+  .pub-thumb { width: 100%; order: -1; }
   .contact-grid { max-width: none; }
   .positions-grid { grid-template-columns: 1fr; }
   .join-quote { flex-direction: column; padding: 1.75rem; gap: 1.25rem; }
@@ -449,6 +452,7 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
           <div class="pub-authors"><strong>Nehar-Belaid D</strong><sup>✉</sup>, Thibodeau A, Eroglu A, Marches R, Eryilmaz G, Unutmaz D, Mejias A, Pascual V, Kuchel G<sup>#</sup>, Ramilo O<sup>#</sup>, Banchereau J<sup>#</sup>, Ucar D<sup>#</sup><sup>✉</sup></div>
           <div class="pub-journal">Nature Communications &nbsp;<span class="pub-badge badge-nc">Nat Commun</span>&nbsp;<span class="pub-badge" style="background:#EEF2FB;color:#3A5AA0">PMID: 40766403</span></div>
         </div>
+        <div class="pub-thumb"><img src="Lifespan_preview.png" alt="Figure preview: circulating immune system across the lifespan"></div>
       </div>
 
       <div class="pub-item">
