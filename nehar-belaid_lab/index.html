@@ -147,8 +147,14 @@ section { padding: 6rem 2rem; }
 .pub-authors strong { color: var(--teal); }
 .pub-journal { font-size: 0.82rem; color: var(--gray-700); font-style: italic; font-weight: 600; }
 .pub-badge { font-family: var(--font-mono); font-size: 0.68rem; padding: 2px 7px; border-radius: 3px; display: inline-block; margin-left: 8px; font-style: normal; }
-.pub-thumb { height: 90px; width: auto; max-width: 240px; flex-shrink: 0; border-radius: 6px; overflow: hidden; border: 1px solid var(--gray-300); background: var(--white); align-self: center; display: flex; align-items: center; justify-content: center; }
+.pub-thumb { height: 90px; width: auto; max-width: 240px; flex-shrink: 0; border-radius: 6px; overflow: hidden; border: 1px solid var(--gray-300); background: var(--white); align-self: center; display: flex; align-items: center; justify-content: center; cursor: zoom-in; transition: border-color 0.2s, box-shadow 0.2s; }
+.pub-thumb:hover { border-color: var(--teal); box-shadow: 0 4px 16px rgba(11,31,58,0.12); }
 .pub-thumb img { height: 100%; width: auto; max-width: 100%; object-fit: contain; display: block; }
+.lightbox-overlay { position: fixed; inset: 0; background: rgba(7,16,30,0.82); backdrop-filter: blur(3px); z-index: 1100; display: none; align-items: center; justify-content: center; padding: 3rem 2rem; cursor: zoom-out; }
+.lightbox-overlay.open { display: flex; }
+.lightbox-overlay img { max-width: 100%; max-height: 100%; border-radius: 6px; box-shadow: 0 30px 80px rgba(0,0,0,0.4); cursor: default; }
+.lightbox-close { position: fixed; top: 1.5rem; right: 1.75rem; width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.1); border: none; color: white; font-size: 1.3rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; z-index: 1101; }
+.lightbox-close:hover { background: rgba(255,255,255,0.22); }
 .badge-ni { background: #EBF3FB; color: #1B6FAA; }
 .badge-nc { background: #E0EEF8; color: #1A5FA0; }
 .badge-lancet { background: #FEF3E2; color: #9A5C00; }
@@ -453,7 +459,7 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
           <div class="pub-authors"><strong>Nehar-Belaid D</strong><sup>✉</sup>, Thibodeau A, Eroglu A, Marches R, Eryilmaz G, Unutmaz D, Mejias A, Pascual V, Kuchel G<sup>#</sup>, Ramilo O<sup>#</sup>, Banchereau J<sup>#</sup>, Ucar D<sup>#</sup><sup>✉</sup></div>
           <div class="pub-journal">Nature Communications &nbsp;<span class="pub-badge badge-nc">Nat Commun</span>&nbsp;<span class="pub-badge" style="background:#EEF2FB;color:#3A5AA0">PMID: 40766403</span></div>
         </div>
-        <div class="pub-thumb"><img src="Lifespan_preview.png" alt="Figure preview: circulating immune system across the lifespan"></div>
+        <div class="pub-thumb"><img src="Lifespan_preview.png" alt="Figure preview: circulating immune system across the lifespan" onclick="openLightbox(this.src, this.alt)"></div>
       </div>
 
       <div class="pub-item">
@@ -463,7 +469,7 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
           <div class="pub-authors"><strong>Nehar-Belaid D</strong>*, Mejías A*, Xu Z, Marches R, et al., Ucar D<sup>#</sup>, Banchereau J<sup>#</sup>, Pascual V<sup>#</sup>, Ramilo O<sup>#</sup></div>
           <div class="pub-journal">Nature Communications &nbsp;<span class="pub-badge badge-nc">Nat Commun</span>&nbsp;<span class="pub-badge" style="background:#EEF2FB;color:#3A5AA0">PMID: 40379618</span></div>
         </div>
-        <div class="pub-thumb"><img src="pCoV_preview.png" alt="Figure preview: cohort design and patient groups for SARS-CoV-2 infant immune study"></div>
+        <div class="pub-thumb"><img src="pCoV_preview.png" alt="Figure preview: cohort design and patient groups for SARS-CoV-2 infant immune study" onclick="openLightbox(this.src, this.alt)"></div>
       </div>
 
       <div class="pub-item">
@@ -659,6 +665,12 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
   </div>
 </div>
 
+<!-- Lightbox for publication figure thumbnails -->
+<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
 <script>
 function openModal(id) {
   document.getElementById('modal-' + id).classList.add('open');
@@ -668,11 +680,23 @@ function closeModal(id) {
   document.getElementById('modal-' + id).classList.remove('open');
   document.body.style.overflow = '';
 }
+function openLightbox(src, alt) {
+  var img = document.getElementById('lightbox-img');
+  img.src = src;
+  img.alt = alt || '';
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') {
     document.querySelectorAll('.modal-overlay.open').forEach(function(m) {
       m.classList.remove('open');
     });
+    closeLightbox();
     document.body.style.overflow = '';
   }
 });
