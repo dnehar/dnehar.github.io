@@ -60,7 +60,7 @@ nav { position: fixed; top: 0; width: 100%; z-index: 100; background: rgba(11,31
 .hero-logo-img { height: 230px; width: auto; }
 #mini-network { width: 100%; max-width: 420px; aspect-ratio: 1; }
 
-section { padding: 6rem 2rem; }
+section { padding: 6rem 2rem; scroll-margin-top: 64px; }
 .section-inner { max-width: 1200px; margin: 0 auto; }
 .section-label { font-family: var(--font-mono); font-size: 0.75rem; color: var(--navy); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 8px; }
 .section-label::before { content: ''; display: block; width: 20px; height: 1px; background: var(--navy); }
@@ -202,6 +202,51 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
 .fade-up-d3 { animation-delay: 0.3s; }
 .fade-up-d4 { animation-delay: 0.45s; }
 
+/* ---------- Navigation clarity + wayfinding ---------- */
+#scroll-progress { position: fixed; top: 0; left: 0; height: 3px; width: 0%; z-index: 200; background: linear-gradient(90deg, var(--teal), var(--teal-light), var(--amber)); transition: width 0.1s linear; }
+.nav-links a { position: relative; padding-bottom: 4px; }
+.nav-links a::after { content: ''; position: absolute; left: 0; right: 0; bottom: -2px; height: 2px; background: var(--teal-light); transform: scaleX(0); transform-origin: center; transition: transform 0.25s ease; border-radius: 2px; }
+.nav-links a:hover::after { transform: scaleX(0.5); }
+.nav-links a.active { color: var(--white); }
+.nav-links a.active::after { transform: scaleX(1); }
+
+/* ---------- Consistent section header + chapter index ---------- */
+.section-head { display: flex; flex-direction: column; margin-bottom: 3rem; }
+.section-kicker { display: flex; align-items: baseline; gap: 0.9rem; margin-bottom: 0.9rem; }
+.section-num { font-family: var(--font-mono); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; color: var(--teal); border: 1px solid var(--teal-pale); background: rgba(26,111,191,0.06); border-radius: 999px; padding: 3px 11px; flex-shrink: 0; }
+.section-head .section-label { margin-bottom: 0; }
+.section-head .section-title { margin-top: 1rem; }
+.section-head .section-intro { margin-bottom: 0; margin-top: 1rem; }
+#team .section-num, #contact .section-num { color: var(--amber); border-color: rgba(232,162,52,0.35); background: rgba(232,162,52,0.1); }
+
+/* stronger top boundary so each section reads as its own "part" */
+.section-rule { border-top: 1px solid var(--gray-300); }
+#team.section-rule, #contact.section-rule { border-top: 1px solid rgba(255,255,255,0.09); }
+
+/* give the two light sections distinct footing */
+#joinus { background: linear-gradient(180deg, var(--gray-100) 0%, var(--white) 55%); }
+
+/* ---------- Scroll reveal ---------- */
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.in { opacity: 1; transform: none; }
+
+/* ---------- Back to top ---------- */
+#back-to-top { position: fixed; bottom: 1.75rem; right: 1.75rem; z-index: 150; width: 46px; height: 46px; border-radius: 50%; border: none; background: var(--teal); color: white; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 20px rgba(11,31,58,0.28); opacity: 0; visibility: hidden; transform: translateY(12px); transition: opacity 0.25s, transform 0.25s, background 0.2s, visibility 0.25s; }
+#back-to-top.show { opacity: 1; visibility: visible; transform: none; }
+#back-to-top:hover { background: var(--navy); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .fade-up { animation: none; }
+  #scroll-progress { transition: none; }
+}
+
+@media (max-width: 768px) {
+  #back-to-top { bottom: 1rem; right: 1rem; width: 42px; height: 42px; }
+  .section-head { margin-bottom: 2rem; }
+}
+
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .hero-content { grid-template-columns: 1fr; padding: 6rem 1.25rem 3rem; gap: 2rem; }
@@ -245,6 +290,8 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
 </style>
 </head>
 <body>
+
+<div id="scroll-progress"></div>
 
 <nav>
   <div class="nav-inner">
@@ -294,22 +341,17 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
             <feGaussianBlur stdDeviation="18"/>
           </filter>
         </defs>
-        <!-- Glow blobs -->
         <ellipse cx="270" cy="178" rx="120" ry="115" fill="#1A6FBF" opacity="0.18" filter="url(#soft)"/>
         <ellipse cx="430" cy="178" rx="120" ry="115" fill="#3B9FE0" opacity="0.15" filter="url(#soft)"/>
         <ellipse cx="350" cy="318" rx="120" ry="115" fill="#7B5EA7" opacity="0.18" filter="url(#soft)"/>
-        <!-- Circle fills -->
         <circle cx="270" cy="182" r="138" fill="#1A6FBF" opacity="0.22"/>
         <circle cx="430" cy="182" r="138" fill="#3B9FE0" opacity="0.18"/>
         <circle cx="350" cy="315" r="138" fill="#7B5EA7" opacity="0.20"/>
-        <!-- Circle borders -->
         <circle cx="270" cy="182" r="138" fill="none" stroke="#3B9FE0" stroke-width="1.5" opacity="0.7"/>
         <circle cx="430" cy="182" r="138" fill="none" stroke="#5BB8F0" stroke-width="1.5" opacity="0.7"/>
         <circle cx="350" cy="315" r="138" fill="none" stroke="#9F7FCC" stroke-width="1.5" opacity="0.7"/>
-        <!-- Center overlap highlight -->
         <ellipse cx="350" cy="248" rx="56" ry="52" fill="#3B9FE0" opacity="0.12"/>
         <ellipse cx="350" cy="248" rx="56" ry="52" fill="none" stroke="#3B9FE0" stroke-width="0.5" opacity="0.4"/>
-        <!-- Icons — Systems Immunology -->
         <circle cx="244" cy="128" r="7" fill="#3B9FE0" opacity="0.9"/>
         <circle cx="220" cy="110" r="4" fill="#3B9FE0" opacity="0.7"/>
         <circle cx="268" cy="110" r="4" fill="#3B9FE0" opacity="0.7"/>
@@ -321,10 +363,8 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
         <line x1="244" y1="128" x2="272" y2="140" stroke="#3B9FE0" stroke-width="1.2" opacity="0.6"/>
         <line x1="256" y1="116" x2="268" y2="132" stroke="#E8A234" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
         <line x1="263" y1="116" x2="275" y2="132" stroke="#E8A234" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
-        <!-- Labels — Systems Immunology -->
         <text x="270" y="175" text-anchor="middle" font-family="DM Serif Display, Georgia, serif" font-size="17" font-weight="500" fill="white" opacity="0.95">Systems</text>
         <text x="270" y="198" text-anchor="middle" font-family="DM Serif Display, Georgia, serif" font-size="17" font-weight="500" fill="white" opacity="0.95">Immunology</text>
-        <!-- Icons — Immunogenomics -->
         <path d="M412 112 Q421 121 412 130 Q403 139 412 148" fill="none" stroke="#5BB8F0" stroke-width="2.2" opacity="0.85"/>
         <path d="M428 112 Q419 121 428 130 Q437 139 428 148" fill="none" stroke="#5BB8F0" stroke-width="2.2" opacity="0.85"/>
         <line x1="412" y1="119" x2="428" y2="119" stroke="#5BB8F0" stroke-width="1.4" opacity="0.6"/>
@@ -334,19 +374,15 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
         <rect x="436" y="121" width="12" height="5" rx="1.5" fill="#5BB8F0" opacity="0.5"/>
         <rect x="436" y="130" width="16" height="5" rx="1.5" fill="#5BB8F0" opacity="0.7"/>
         <rect x="436" y="139" width="9"  height="5" rx="1.5" fill="#5BB8F0" opacity="0.5"/>
-        <!-- Labels — Immunogenomics -->
         <text x="430" y="175" text-anchor="middle" font-family="DM Serif Display, Georgia, serif" font-size="17" font-weight="500" fill="white" opacity="0.95">Immuno-</text>
         <text x="430" y="198" text-anchor="middle" font-family="DM Serif Display, Georgia, serif" font-size="17" font-weight="500" fill="white" opacity="0.95">genomics</text>
-        <!-- Icons — Clinical Pediatrics -->
         <circle cx="326" cy="330" r="9" fill="#9F7FCC" opacity="0.85"/>
         <path d="M326 339 L326 361 M314 345 L338 345 M326 361 L317 374 M326 361 L335 374" stroke="#9F7FCC" stroke-width="2.2" stroke-linecap="round" fill="none" opacity="0.85"/>
         <rect x="344" y="351" width="30" height="16" rx="3.5" fill="none" stroke="#9F7FCC" stroke-width="1.8" opacity="0.8"/>
         <rect x="344" y="346" width="11" height="9" rx="2.5" fill="#9F7FCC" opacity="0.5"/>
         <line x1="344" y1="363" x2="374" y2="363" stroke="#9F7FCC" stroke-width="1.5" opacity="0.6"/>
-        <!-- Labels — Clinical Pediatrics -->
         <text x="350" y="392" text-anchor="middle" font-family="DM Serif Display, Georgia, serif" font-size="17" font-weight="500" fill="white" opacity="0.95">Clinical</text>
         <text x="350" y="415" text-anchor="middle" font-family="DM Serif Display, Georgia, serif" font-size="17" font-weight="500" fill="white" opacity="0.95">Pediatrics</text>
-        <!-- Center label -->
         <text x="350" y="236" text-anchor="middle" font-family="DM Serif Display, Georgia, serif" font-size="14" font-weight="500" fill="white" opacity="0.95">Translational</text>
         <text x="350" y="254" text-anchor="middle" font-family="DM Serif Display, Georgia, serif" font-size="14" font-weight="500" fill="white" opacity="0.95">Pediatric</text>
         <text x="350" y="272" text-anchor="middle" font-family="DM Serif Display, Georgia, serif" font-size="14" font-weight="500" fill="white" opacity="0.95">Immunology</text>
@@ -357,10 +393,12 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
 
 <div class="teal-bar"></div>
 
-<section id="research">
+<section id="research" class="reveal">
   <div class="section-inner">
-    <div class="section-label">Research Focus</div>
-    <h2 class="section-title">Immune Signatures of Early Life Immunity</h2>
+    <div class="section-head">
+      <div class="section-kicker"><span class="section-num">01</span><div class="section-label">Research Focus</div></div>
+      <h2 class="section-title">Immune Signatures of Early Life Immunity</h2>
+    </div>
     <p class="section-intro">Our lab leverages systems immunology to extract genomic signatures of immune responses to infection, vaccination, and various diseases, with a focus on translational pediatric immunology. Through close collaborations with clinicians, we identify mechanisms that can drive precision medicine, particularly in vulnerable populations.</p>
     <p class="section-intro" style="margin-bottom:1.5rem"><strong>Why pediatric immunology?</strong> Infants and young children are especially vulnerable to infectious diseases.</p>
     <div class="modal-figure" style="max-width:650px;margin:0 0 2rem;box-shadow:0 10px 34px rgba(11,31,58,0.12)">
@@ -400,10 +438,12 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
   </div>
 </section>
 
-<section id="team">
+<section id="team" class="section-rule reveal">
   <div class="section-inner">
-    <div class="section-label">Our Team</div>
-    <h2 class="section-title">The people behind the science</h2>
+    <div class="section-head">
+      <div class="section-kicker"><span class="section-num">02</span><div class="section-label">Our Team</div></div>
+      <h2 class="section-title">The people behind the science</h2>
+    </div>
     <p class="section-intro">We are a diverse, collaborative team of immunologists and computational biologists at Emory University. We are currently building the lab and recruiting at all levels.</p>
     <p class="section-intro">Our lab is part of the <a href="https://med.emory.edu/departments/pathology/research/patru/index.html" target="_blank" style="color:var(--teal-light)">Pathology Advanced Translational Research Unit (PATRU)</a>, a multidisciplinary systems immunology unit within Emory's <a href="https://med.emory.edu/departments/pathology/index.html" target="_blank" style="color:var(--teal-light)">Department of Pathology and Laboratory Medicine</a> that connects basic immunology to translational and clinical research in infectious disease, cancer immunotherapy, and autoimmune disease. The department has ranked among the top 6 NIH-funded pathology departments nationwide for over a decade, with more than $40M in annual NIH funding.</p>
     <div class="team-grid">
@@ -444,9 +484,12 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
   </div>
 </section>
 
-<section id="publications">
+<section id="publications" class="section-rule reveal">
   <div class="section-inner">
-    <div class="section-label">Selected Publications</div>
+    <div class="section-head">
+      <div class="section-kicker"><span class="section-num">03</span><div class="section-label">Publications</div></div>
+      <h2 class="section-title">Selected work</h2>
+    </div>
     <p class="section-intro">Selected publications from the PI. For the complete list, including collaborative and senior-supported work, see <a href="https://www.ncbi.nlm.nih.gov/myncbi/1Li--NSWc6YQS/bibliography/public/" target="_blank" style="color:var(--teal)">PubMed</a> and <a href="https://scholar.google.fr/citations?user=zDjOYRUAAAAJ&hl=fr" target="_blank" style="color:var(--teal)">Google Scholar</a>.</p>
     <div style="margin-bottom:1.5rem;font-size:0.82rem;color:var(--gray-500);line-height:1.8;padding:0.75rem 1rem;background:var(--white);border:1px solid var(--gray-300);border-radius:6px;display:inline-block">
       * co-first author &nbsp;·&nbsp; <sup>#</sup> co-senior author &nbsp;·&nbsp; <sup>✉</sup> corresponding author
@@ -531,10 +574,12 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
   </div>
 </section>
 
-<section id="joinus">
+<section id="joinus" class="section-rule reveal">
   <div class="section-inner">
-    <div class="section-label">Join Us</div>
-    <h2 class="section-title">We are recruiting</h2>
+    <div class="section-head">
+      <div class="section-kicker"><span class="section-num">04</span><div class="section-label">Join Us</div></div>
+      <h2 class="section-title">We are recruiting</h2>
+    </div>
     <p class="section-intro">We are actively building the lab and looking for passionate scientists at all levels who are excited about understanding how the immune system works across the human lifespan.</p>
     <div class="positions-grid">
       <div class="position-card">
@@ -560,10 +605,12 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
   </div>
 </section>
 
-<section id="contact">
+<section id="contact" class="section-rule reveal">
   <div class="section-inner">
-    <div class="section-label">Contact</div>
-    <h2 class="section-title">Get in touch</h2>
+    <div class="section-head">
+      <div class="section-kicker"><span class="section-num">05</span><div class="section-label">Contact</div></div>
+      <h2 class="section-title">Get in touch</h2>
+    </div>
     <div class="contact-grid">
       <div class="contact-info">
         <p class="contact-intro">Whether you're interested in joining the lab, discussing a collaboration, or just want to learn more about our work — we'd love to hear from you.</p>
@@ -590,7 +637,6 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
 
 <div class="teal-bar"></div>
 
-<!-- Modal: Infant immune development -->
 <div class="modal-overlay" id="modal-infant-dev" onclick="if(event.target===this) closeModal('infant-dev')">
   <div class="modal-box">
     <div class="modal-header">
@@ -627,7 +673,6 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
   </div>
 </div>
 
-<!-- Modal: SOX4+ T cell biology -->
 <div class="modal-overlay" id="modal-sox4-biology" onclick="if(event.target===this) closeModal('sox4-biology')">
   <div class="modal-box">
     <div class="modal-header">
@@ -669,7 +714,6 @@ footer { background: #081629; padding: 2rem; text-align: center; border-top: 1px
   </div>
 </div>
 
-<!-- Lightbox for publication figure thumbnails -->
 <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
   <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">✕</button>
   <img id="lightbox-img" src="" alt="">
@@ -705,6 +749,8 @@ document.addEventListener('keydown', function(e) {
   }
 });
 </script>
+
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
 
 <footer>
   <div class="footer-inner">
@@ -754,6 +800,60 @@ function revealEmail(el, e) {
   } catch (err) { /* no-op */ }
   return false;
 }
+</script>
+<script>
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Scroll progress bar
+  var bar = document.getElementById('scroll-progress');
+  var toTop = document.getElementById('back-to-top');
+  function onScroll() {
+    var h = document.documentElement;
+    var scrolled = h.scrollTop;
+    var max = h.scrollHeight - h.clientHeight;
+    var pct = max > 0 ? (scrolled / max) * 100 : 0;
+    if (bar) bar.style.width = pct + '%';
+    if (toTop) toTop.classList.toggle('show', scrolled > 600);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Scroll-spy: highlight the nav link for the section in view
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-links a'));
+  var linkFor = {};
+  navLinks.forEach(function (a) {
+    var id = a.getAttribute('href');
+    if (id && id.charAt(0) === '#') linkFor[id.slice(1)] = a;
+  });
+  var sections = ['home', 'research', 'team', 'publications', 'joinus', 'contact']
+    .map(function (id) { return document.getElementById(id); })
+    .filter(Boolean);
+
+  var spy = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        navLinks.forEach(function (a) { a.classList.remove('active'); });
+        var active = linkFor[e.target.id];
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+  sections.forEach(function (s) { spy.observe(s); });
+
+  // Reveal sections on scroll
+  var reveals = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+  if (reduce) {
+    reveals.forEach(function (el) { el.classList.add('in'); });
+  } else {
+    var ro = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); ro.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
+    reveals.forEach(function (el) { ro.observe(el); });
+  }
+})();
 </script>
 </body>
 </html>
